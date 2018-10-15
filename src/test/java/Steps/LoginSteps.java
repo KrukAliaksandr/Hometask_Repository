@@ -8,11 +8,10 @@ import org.openqa.selenium.WebDriver;
 
 import java.util.concurrent.TimeUnit;
 
-public class Steps {
-	private static final int IMPLICIT_DELAY = 5;
+public class LoginSteps {
+	private static final int IMPLICIT_DELAY = 10;
 	private static final String LAGUAGE_FILTER = "Java";
 	private WebDriver driver;
-	private String expectedGistName;
 
 	private final Logger logger = LogManager.getRootLogger();
 
@@ -26,10 +25,10 @@ public class Steps {
 		DriverSingleton.closeDriver();
 	}
 
-	public void loginGmail(String username, String password) {
+	public void loginInToMailRu(String username, String password) {
 		AcccountLoginPage loginPage = new AcccountLoginPage(driver);
 		loginPage.openPage();
-		loginPage.loginInToGmail(username, password);
+		loginPage.login(username, password);
 	}
 
 

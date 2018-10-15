@@ -5,8 +5,10 @@ import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.concurrent.TimeUnit;
 import java.util.function.Function;
@@ -14,19 +16,17 @@ import java.util.function.Function;
 import static java.util.concurrent.TimeUnit.SECONDS;
 
 public class AcccountLoginPage extends AbstractPage {
-    private final String BASE_URL = "https://accounts.google.com";
+    private final String BASE_URL = "https://mail.ru/";
 
-    @FindBy(id = "identifierId")
+    @FindBy(id = "mailbox:login")
     private WebElement inputUsername;
 
-    @FindBy(name ="password")
+    @FindBy(id ="mailbox:password")
     private WebElement inputPassword;
 
-    @FindBy(id = "identifierNext")
-    private WebElement buttonFirstFuther;
+    @FindBy(xpath = "//input[@class = 'o-control']")
+    private WebElement mailButton;
 
-    @FindBy(xpath = "//span[text() = 'Далее']")
-    private WebElement buttonSecondFuther;
     @Override
     public void openPage()
     {
@@ -38,17 +38,11 @@ public class AcccountLoginPage extends AbstractPage {
         PageFactory.initElements(this.driver, this);
     }
 
-    public void loginInToGmail(String username,String password){
+    public void login (String username,String password){
+        inputUsername.clear();
         inputUsername.sendKeys(username);
-        buttonFirstFuther.click();
+        inputPassword.clear();
         inputPassword.sendKeys(password);
-        driver.switchTo().defaultContent();
-//        try {
-//            Thread.sleep(3000);
-//        } catch (InterruptedException e) {
-//            e.printStackTrace();
-//        }
-        driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
-        buttonSecondFuther.click();
+        mailButton.click();
     }
 }
