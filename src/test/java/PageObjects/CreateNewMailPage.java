@@ -1,14 +1,20 @@
 package PageObjects;
 
+<<<<<<< HEAD
 import org.openqa.selenium.By;
+=======
+>>>>>>> 8acdab394ea9206ccd709619d30ad1108b727940
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+<<<<<<< HEAD
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+=======
+>>>>>>> 8acdab394ea9206ccd709619d30ad1108b727940
 
 public class CreateNewMailPage extends AbstractPage {
 
@@ -26,6 +32,7 @@ public class CreateNewMailPage extends AbstractPage {
     WebElement topic;
 
     @FindBy(css = "#tinymce")
+<<<<<<< HEAD
     WebElement textArea;
 
     @FindBy(xpath = "//div[@id='b-toolbar__right']//div//div[contains(@class,'b-toolbar')]//div[contains(@class,'b-toolbar__group')]//div[contains(@class,'b-toolbar__item')]//div//div[contains(@title,'Сохранить (Ctrl+S)')]//span[contains(@class,'b-toolbar__btn__text')][contains(text(),'Сохранить')]")
@@ -36,6 +43,15 @@ public class CreateNewMailPage extends AbstractPage {
 
     @FindBy(xpath = "//div[@data-name = 'send']")
     WebElement sendLink;
+=======
+    WebElement text_area;
+
+    @FindBy(xpath = "//div[@id='b-toolbar__right']//div//div[contains(@class,'b-toolbar')]//div[contains(@class,'b-toolbar__group')]//div[contains(@class,'b-toolbar__item')]//div//div[contains(@title,'Сохранить (Ctrl+S)')]//span[contains(@class,'b-toolbar__btn__text')][contains(text(),'Сохранить')]")
+    WebElement button_save_letter;
+
+    @FindBy(xpath = "//span[contains(text(),'Черновики')]")
+    WebElement draft_link;
+>>>>>>> 8acdab394ea9206ccd709619d30ad1108b727940
 
 
     public void openPage() {
@@ -54,6 +70,7 @@ public class CreateNewMailPage extends AbstractPage {
         topic.sendKeys(topic_text);
         driver.switchTo().frame(0);
         JavascriptExecutor js = (JavascriptExecutor) driver;
+<<<<<<< HEAD
         js.executeScript("arguments[0].textContent= arguments[1];", textArea, text_msg);
         driver.switchTo().defaultContent();
         buttonSaveLetter.click();
@@ -77,6 +94,15 @@ public class CreateNewMailPage extends AbstractPage {
 
     public void ClickDraftLink() {
         draftLink.click();
+=======
+        js.executeScript("arguments[0].textContent= arguments[1];", text_area, text_msg);
+        driver.switchTo().defaultContent();
+        button_save_letter.click();
+    }
+
+    public void ClickDraftLink() {
+        draft_link.click();
+>>>>>>> 8acdab394ea9206ccd709619d30ad1108b727940
     }
 
     public String getMailReciever() {

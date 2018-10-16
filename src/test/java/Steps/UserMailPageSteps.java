@@ -3,6 +3,10 @@ package Steps;
 import PageObjects.UserMailPage;
 import Singleton.DriverSingleton;
 import org.openqa.selenium.WebDriver;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8acdab394ea9206ccd709619d30ad1108b727940
 import java.util.concurrent.TimeUnit;
 
 public class UserMailPageSteps {

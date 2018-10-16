@@ -8,7 +8,10 @@
       <change beforePath="$PROJECT_DIR$/src/test/java/DemoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DemoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/AcccountLoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/AcccountLoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/UserMailPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/UserMailPage.java" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/src/test/java/Singleton/DriverSingleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Singleton/DriverSingleton.java" afterDir="false" />
+=======
+>>>>>>> 8acdab394ea9206ccd709619d30ad1108b727940
       <change beforePath="$PROJECT_DIR$/src/test/java/Steps/Steps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Steps/LoginSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/DemoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/DemoTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/AcccountLoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/AcccountLoginPage.class" afterDir="false" />
@@ -95,36 +98,62 @@
     <session id="410583306">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+<<<<<<< HEAD
           <entry key="project.closed" value="3" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.21" value="1" />
           <entry key="project.opened" value="3" />
+=======
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.opened" value="1" />
+>>>>>>> 8acdab394ea9206ccd709619d30ad1108b727940
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+<<<<<<< HEAD
           <entry key="dummy" value="25" />
           <entry key="java" value="3376" />
+=======
+          <entry key="dummy" value="3" />
+          <entry key="java" value="1979" />
+>>>>>>> 8acdab394ea9206ccd709619d30ad1108b727940
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+<<<<<<< HEAD
           <entry key="JAVA" value="3376" />
           <entry key="PLAIN_TEXT" value="25" />
+=======
+          <entry key="JAVA" value="1979" />
+          <entry key="PLAIN_TEXT" value="3" />
+>>>>>>> 8acdab394ea9206ccd709619d30ad1108b727940
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+<<<<<<< HEAD
           <entry key="CLASS" value="2" />
           <entry key="JAVA" value="183" />
+=======
+          <entry key="CLASS" value="1" />
+          <entry key="JAVA" value="11" />
+>>>>>>> 8acdab394ea9206ccd709619d30ad1108b727940
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+<<<<<<< HEAD
           <entry key="class" value="2" />
           <entry key="java" value="183" />
+=======
+          <entry key="class" value="1" />
+          <entry key="java" value="11" />
+>>>>>>> 8acdab394ea9206ccd709619d30ad1108b727940
         </counts>
       </usages-collector>
     </session>
@@ -133,11 +162,22 @@
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/LeftBarClass.java">
+<<<<<<< HEAD
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
               <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
+=======
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="278">
+              <caret line="19" column="23" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#107#108#0" expanded="true" />
+                <element signature="e#153#154#0" expanded="true" />
+                <element signature="e#644#645#0" expanded="true" />
+                <element signature="e#665#666#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -145,6 +185,38 @@
       </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/DemoTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="402">
+              <caret line="29" column="40" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/DraftsClass.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#188#189#0" expanded="true" />
+                <element signature="e#234#235#0" expanded="true" />
+>>>>>>> 8acdab394ea9206ccd709619d30ad1108b727940
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/DemoTest.java">
+=======
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Steps/LeftBarClassSteps.java">
+>>>>>>> 8acdab394ea9206ccd709619d30ad1108b727940
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="731">
               <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
@@ -168,6 +240,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/AcccountLoginPage.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
@@ -175,27 +248,61 @@
               <folding>
                 <element signature="e#965#966#0" expanded="true" />
                 <element signature="e#1011#1012#0" expanded="true" />
+=======
+        <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/UserMailPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="183">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+>>>>>>> 8acdab394ea9206ccd709619d30ad1108b727940
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Singleton/DriverSingleton.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/AcccountLoginPage.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="306">
               <caret line="28" column="56" selection-start-line="28" selection-start-column="56" selection-end-line="28" selection-end-column="56" />
+=======
+            <state relative-caret-position="68">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+              <folding>
+                <element signature="e#965#966#0" expanded="true" />
+                <element signature="e#1011#1012#0" expanded="true" />
+              </folding>
+>>>>>>> 8acdab394ea9206ccd709619d30ad1108b727940
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/DraftsPage.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-198">
               <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+=======
+        <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/CreateNewMailPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+>>>>>>> 8acdab394ea9206ccd709619d30ad1108b727940
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#998#999#0" expanded="true" />
+                <element signature="e#1044#1045#0" expanded="true" />
+                <element signature="e#2047#2048#0" expanded="true" />
+                <element signature="e#2081#2082#0" expanded="true" />
+                <element signature="e#2114#2115#0" expanded="true" />
+                <element signature="e#2149#2150#0" expanded="true" />
+                <element signature="e#2185#2186#0" expanded="true" />
+                <element signature="e#2217#2218#0" expanded="true" />
+                <element signature="e#2255#2256#0" expanded="true" />
+                <element signature="e#2289#2290#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -216,8 +323,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Steps/UserMailPageSteps.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="119">
               <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+=======
+            <state relative-caret-position="-28">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+>>>>>>> 8acdab394ea9206ccd709619d30ad1108b727940
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -235,6 +347,7 @@
               </folding>
             </state>
           </provider>
+<<<<<<< HEAD
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -247,6 +360,8 @@
               </folding>
             </state>
           </provider>
+=======
+>>>>>>> 8acdab394ea9206ccd709619d30ad1108b727940
         </entry>
       </file>
     </leaf>
@@ -264,13 +379,19 @@
       <find>String</find>
       <find>accountImageButtonCurrentEmail</find>
       <find>Adressee</find>
+<<<<<<< HEAD
       <find>draft_page</find>
+=======
+>>>>>>> 8acdab394ea9206ccd709619d30ad1108b727940
     </findStrings>
     <replaceStrings>
       <replace>buttonFuther</replace>
       <replace>accountCurrentEmail</replace>
       <replace>Reciever</replace>
+<<<<<<< HEAD
       <replace>draftsPage</replace>
+=======
+>>>>>>> 8acdab394ea9206ccd709619d30ad1108b727940
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -281,6 +402,7 @@
       <list>
         <option value="$PROJECT_DIR$/src/test/java/PageObjects/AbstractPage.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/test/java/Steps/Steps.java" />
         <option value="$PROJECT_DIR$/src/test/java/Steps/CreateNewMessageSteps.java" />
         <option value="$PROJECT_DIR$/src/test/java/Steps/LeftBarClassSteps.java" />
@@ -297,6 +419,21 @@
         <option value="$PROJECT_DIR$/src/test/java/Steps/LoginSteps.java" />
         <option value="$PROJECT_DIR$/src/test/java/Singleton/DriverSingleton.java" />
         <option value="$PROJECT_DIR$/src/test/java/PageObjects/CreateNewMailPage.java" />
+=======
+        <option value="$PROJECT_DIR$/src/test/java/Singleton/DriverSingleton.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Steps/Steps.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PageObjects/AcccountLoginPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Steps/CreateNewMessageSteps.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PageObjects/UserMailPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Steps/LoginSteps.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Steps/UserMailPageSteps.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PageObjects/CreateNewMailPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Steps/CreateNewMailSteps.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Steps/LeftBarClassSteps.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PageObjects/LeftBarClass.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PageObjects/DraftsClass.java" />
+        <option value="$PROJECT_DIR$/src/test/java/DemoTest.java" />
+>>>>>>> 8acdab394ea9206ccd709619d30ad1108b727940
       </list>
     </option>
   </component>
@@ -308,7 +445,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
+    <option name="x" value="833" />
     <option name="width" value="854" />
     <option name="height" value="1017" />
   </component>
@@ -376,12 +513,21 @@
           <select />
         </subPane>
       </pane>
+<<<<<<< HEAD
       <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539698129118" />
+=======
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539614110423" />
+>>>>>>> 8acdab394ea9206ccd709619d30ad1108b727940
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -406,8 +552,13 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="TestNG.DemoTest (1)">
     <configuration name="DemoTest (1)" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+=======
+  <component name="RunManager" selected="TestNG.DemoTest.oneCanLoginGmail">
+    <configuration name="DemoTest (2)" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+>>>>>>> 8acdab394ea9206ccd709619d30ad1108b727940
       <module name="WebDriverTask" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="DemoTest" />
@@ -462,17 +613,21 @@
     <list>
       <item itemvalue="TestNG.DemoTest" />
       <item itemvalue="TestNG.DemoTest.oneCanLoginGmail" />
+      <item itemvalue="TestNG.DemoTest (2)" />
       <item itemvalue="TestNG.DemoTest (3)" />
       <item itemvalue="TestNG.DemoTest (4)" />
-      <item itemvalue="TestNG.DemoTest (1)" />
     </list>
     <recent_temporary>
       <list>
+<<<<<<< HEAD
         <item itemvalue="TestNG.DemoTest (1)" />
+=======
+>>>>>>> 8acdab394ea9206ccd709619d30ad1108b727940
         <item itemvalue="TestNG.DemoTest.oneCanLoginGmail" />
         <item itemvalue="TestNG.DemoTest" />
         <item itemvalue="TestNG.DemoTest (4)" />
         <item itemvalue="TestNG.DemoTest (3)" />
+        <item itemvalue="TestNG.DemoTest (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -490,6 +645,7 @@
     <servers />
   </component>
   <component name="TestHistory">
+<<<<<<< HEAD
     <history-entry file="DemoTest_(1) - 2018.10.16 at 16h 26m 44s.xml">
       <configuration name="DemoTest (1)" configurationId="TestNG" />
     </history-entry>
@@ -519,6 +675,37 @@
     </history-entry>
     <history-entry file="DemoTest_(1) - 2018.10.16 at 16h 55m 16s.xml">
       <configuration name="DemoTest (1)" configurationId="TestNG" />
+=======
+    <history-entry file="DemoTest_oneCanLoginGmail - 2018.10.15 at 16h 06m 17s.xml">
+      <configuration name="DemoTest.oneCanLoginGmail" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="DemoTest_oneCanLoginGmail - 2018.10.15 at 16h 10m 49s.xml">
+      <configuration name="DemoTest.oneCanLoginGmail" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="DemoTest_oneCanLoginGmail - 2018.10.15 at 16h 11m 38s.xml">
+      <configuration name="DemoTest.oneCanLoginGmail" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="DemoTest_oneCanLoginGmail - 2018.10.15 at 16h 17m 58s.xml">
+      <configuration name="DemoTest.oneCanLoginGmail" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="DemoTest_oneCanLoginGmail - 2018.10.15 at 16h 18m 24s.xml">
+      <configuration name="DemoTest.oneCanLoginGmail" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="DemoTest_oneCanLoginGmail - 2018.10.15 at 16h 35m 52s.xml">
+      <configuration name="DemoTest.oneCanLoginGmail" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="DemoTest_oneCanLoginGmail - 2018.10.15 at 16h 37m 22s.xml">
+      <configuration name="DemoTest.oneCanLoginGmail" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="DemoTest_oneCanLoginGmail - 2018.10.15 at 17h 01m 18s.xml">
+      <configuration name="DemoTest.oneCanLoginGmail" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="DemoTest_oneCanLoginGmail - 2018.10.15 at 17h 06m 44s.xml">
+      <configuration name="DemoTest.oneCanLoginGmail" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="DemoTest_oneCanLoginGmail - 2018.10.15 at 17h 34m 06s.xml">
+      <configuration name="DemoTest.oneCanLoginGmail" configurationId="TestNG" />
+>>>>>>> 8acdab394ea9206ccd709619d30ad1108b727940
     </history-entry>
   </component>
   <component name="TodoView">
@@ -533,7 +720,11 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
     <layout>
+<<<<<<< HEAD
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13753057" />
+=======
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13508557" />
+>>>>>>> 8acdab394ea9206ccd709619d30ad1108b727940
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -598,39 +789,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/AbstractPage.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-support/3.14.0/selenium-support-3.14.0.jar!/org/openqa/selenium/support/ui/WebDriverWait.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+        <state relative-caret-position="153">
+          <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/UserMailPage.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-remote-driver/3.14.0/selenium-remote-driver-3.14.0.jar!/org/openqa/selenium/remote/ErrorHandler.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1476#1477#0" expanded="true" />
-            <element signature="e#1518#1519#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="191">
+          <caret line="162" selection-start-line="162" selection-end-line="162" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Singleton/DriverSingleton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Steps/LoginSteps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Steps/DraftsSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state relative-caret-position="170">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -647,12 +830,130 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Steps/UserMailPageSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-28">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/AbstractPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/UserMailPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1476#1477#0" expanded="true" />
+            <element signature="e#1518#1519#0" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/AcccountLoginPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding>
+            <element signature="e#965#966#0" expanded="true" />
+            <element signature="e#1011#1012#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/CreateNewMailPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#998#999#0" expanded="true" />
+            <element signature="e#1044#1045#0" expanded="true" />
+            <element signature="e#2047#2048#0" expanded="true" />
+            <element signature="e#2081#2082#0" expanded="true" />
+            <element signature="e#2114#2115#0" expanded="true" />
+            <element signature="e#2149#2150#0" expanded="true" />
+            <element signature="e#2185#2186#0" expanded="true" />
+            <element signature="e#2217#2218#0" expanded="true" />
+            <element signature="e#2255#2256#0" expanded="true" />
+            <element signature="e#2289#2290#0" expanded="true" />
+>>>>>>> 8acdab394ea9206ccd709619d30ad1108b727940
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/test/java/Steps/LoginSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/UserMailPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+>>>>>>> 8acdab394ea9206ccd709619d30ad1108b727940
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/test/java/Steps/DraftsSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Steps/CreateNewMailSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/DraftsClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#188#189#0" expanded="true" />
+            <element signature="e#234#235#0" expanded="true" />
+>>>>>>> 8acdab394ea9206ccd709619d30ad1108b727940
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/LeftBarClass.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="119">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
+=======
+        <state relative-caret-position="278">
+          <caret line="19" column="23" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#107#108#0" expanded="true" />
+            <element signature="e#153#154#0" expanded="true" />
+            <element signature="e#644#645#0" expanded="true" />
+            <element signature="e#665#666#0" expanded="true" />
+>>>>>>> 8acdab394ea9206ccd709619d30ad1108b727940
           </folding>
         </state>
       </provider>
@@ -667,8 +968,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/AcccountLoginPage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/DemoTest.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="68">
           <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
           <folding>
@@ -719,6 +1021,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="731">
           <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+=======
+        <state relative-caret-position="402">
+          <caret line="29" column="40" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
+>>>>>>> 8acdab394ea9206ccd709619d30ad1108b727940
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
