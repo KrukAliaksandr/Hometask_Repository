@@ -36,6 +36,6 @@ public class DraftsSteps {
         createNewMailPage.clickSendButton();
         createNewMailPage.mailIsSentMessage();
         draftsPage.openPage();
-        return draftsPage.findMailInDraft() == null;
+        return (draftsPage.findMailInDraft() == null);
     }
 }

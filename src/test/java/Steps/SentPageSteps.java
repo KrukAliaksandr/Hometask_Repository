@@ -16,9 +16,15 @@ public class SentPageSteps {
         driver.manage().timeouts().implicitlyWait(
                 IMPLICIT_DELAY, TimeUnit.SECONDS);
     }
+
+    public void closeDriver() {
+        DriverSingleton.closeDriver();
+    }
+
     public boolean mailIsPresentInSentFolder(){
         SentPage sentPage = new SentPage(driver);
         sentPage.openPage();
         return sentPage.findSentMailInDraft();
     }
+
 }

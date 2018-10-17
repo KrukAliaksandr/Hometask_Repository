@@ -25,5 +25,4 @@ public class CreateNewMailSteps {
         createNewMailPage.fillNewMailMessage(createNewMailPage.getMailReciever(),createNewMailPage.getMailTopic(),createNewMailPage.getMailContent());
     }
 
-
 }

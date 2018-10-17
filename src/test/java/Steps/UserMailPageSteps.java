@@ -3,6 +3,8 @@ package Steps;
 import PageObjects.UserMailPage;
 import Singleton.DriverSingleton;
 import org.openqa.selenium.WebDriver;
+
+import javax.jws.soap.SOAPBinding;
 import java.util.concurrent.TimeUnit;
 
 public class UserMailPageSteps {
@@ -32,6 +34,12 @@ public class UserMailPageSteps {
         UserMailPage userMailPage = new UserMailPage(driver);
         return (userMailPage.getUSERNAME()).equals(userMailPage.returnAccountEmail(userMailPage.getAccountCurrentEmail()));
     }
+
+    public void logOut(){
+        UserMailPage userMailPage = new UserMailPage(driver);
+        userMailPage.pressLogoutButton();
+    }
+
 
 
 }

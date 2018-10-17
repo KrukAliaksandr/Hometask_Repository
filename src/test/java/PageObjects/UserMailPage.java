@@ -20,6 +20,9 @@ public class UserMailPage extends AbstractPage {
     @FindBy(xpath = "//*[@id='PH_user-email']")
     private WebElement accountCurrentEmail;
 
+    @FindBy(xpath = "//*[@id='PH_logoutLink']")
+    private WebElement logoutButton;
+
     @FindBy(xpath = "//div[@class='b-toolbar__item']")
     private WebElement buttonCreateNewMessage;
 
@@ -50,6 +53,9 @@ public class UserMailPage extends AbstractPage {
 
     public void pressCreateMessageButton() {
         buttonCreateNewMessage.click();
+    }
+    public void pressLogoutButton() {
+        logoutButton.click();
     }
 
     public String getBASE_URL() {
