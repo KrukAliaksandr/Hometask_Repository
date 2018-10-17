@@ -8,10 +8,6 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 8acdab394ea9206ccd709619d30ad1108b727940
 
 public class UserMailPage extends AbstractPage {
     private final String BASE_URL = "https://e.mail.ru/messages";
@@ -42,11 +38,10 @@ public class UserMailPage extends AbstractPage {
     }
 
     private WebDriverWait getWebDriverWait() {
-        if(null == wait) {
+        if (null == wait) {
             wait = new WebDriverWait(this.driver, WAIT_SECONDS);
         }
         return wait;
-<<<<<<< HEAD
     }
 
     public WebElement returnAccountEmail(WebElement webElement) {
@@ -60,21 +55,6 @@ public void pressCreateMessageButton(){
         return BASE_URL;
     }
 
-=======
-    }
-
-    public WebElement returnAccountEmail(WebElement webElement) {
-        return getWebDriverWait().until(ExpectedConditions.visibilityOf(webElement));
-    }
-public void pressCreateMessageButton(){
-        buttonCreateNewMessage.click();
-}
-
-    public String getBASE_URL() {
-        return BASE_URL;
-    }
-
->>>>>>> 8acdab394ea9206ccd709619d30ad1108b727940
     public String getUSERNAME() {
         return USERNAME;
     }

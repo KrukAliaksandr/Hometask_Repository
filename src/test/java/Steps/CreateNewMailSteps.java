@@ -13,10 +13,7 @@ public class CreateNewMailSteps {
     private WebDriver driver;
     private String expectedGistName;
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 8acdab394ea9206ccd709619d30ad1108b727940
     public void initBrowser() {
         driver = DriverSingleton.getDriver();
         driver.manage().timeouts().implicitlyWait(
