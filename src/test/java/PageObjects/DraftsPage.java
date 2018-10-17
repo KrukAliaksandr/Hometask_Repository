@@ -58,8 +58,8 @@ public class DraftsPage extends AbstractPage {
 
 
     }
-    public DraftsPage clickOnReference()
-    {
+
+    public DraftsPage clickOnReference() {
         findMailInDraft().click();
         return this;
     }
