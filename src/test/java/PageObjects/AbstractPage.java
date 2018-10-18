@@ -18,7 +18,6 @@ public abstract class AbstractPage{
 
         protected WebDriver driver;
         protected final Logger logger = LogManager.getRootLogger();
-
         private WebDriverWait wait;
         private long currentWaitTime;
 
@@ -82,6 +81,5 @@ public abstract class AbstractPage{
                 e.printStackTrace();
             }
         }
-
 
 }

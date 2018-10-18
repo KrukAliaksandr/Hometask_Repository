@@ -6,9 +6,10 @@ import org.openqa.selenium.support.FindBy;
 
 import java.util.List;
 
-    public class TrashPage extends LeftBarClass {
+    public class TrashPage extends AbstractPage {
 
         private final long WAIT_ELEMENT_VISIBILITY_SEC = 10;
+        private final String BASE_URL = "https://e.mail.ru/messages/trash";
 
         @FindBy(xpath = "//*[@id='b-letters']/div[1]/div[5]/div/div[2]/div")
         private List<WebElement> deleteMessagesList;
@@ -23,12 +24,13 @@ import java.util.List;
                 String[] trashListItem = deleteMessagesList.get(i).getText().trim().split("\r\n|\n");
                 String trashSubjectAndBody = trashListItem[1].trim();
                 if (expectedSubjectAndBody.contains(trashSubjectAndBody)) {
-                    logger.info("Message is found in Trash folder: sbj&body: '" + trashSubjectAndBody + "'");
                     return i;
                 }
             }
-            logger.info("Message is NOT found in Trash folder");
+
             return -1;
         }
-
+        public void openPage() {
+            driver.navigate().to(BASE_URL);
+        }
     }

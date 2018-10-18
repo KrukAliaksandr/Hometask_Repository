@@ -13,7 +13,7 @@ public class Steps {
     private String expectedGistName;
     private SpamPage spamPage;
     private InboxPage inboxPage;
-    public TrashPage trashPage;
+    private TrashPage trashPage;
 
     public Steps() {
         driver = DriverSingleton.getDriver();
@@ -27,15 +27,16 @@ public class Steps {
     }
 
     public boolean isMailPresentInSpamFolder() {
-        spamPage = inboxPage.openSpamFolder();
+        spamPage.openPage();
         return spamPage.getMsgIndexInListMarkedAsSpam(inboxPage.getFirstMsgSubjectAndBody()) >= 0;
     }
 
     public boolean isDeletedMailPresentInTrashFolder() {
-        trashPage = inboxPage.openTrashFolder();
+        inboxPage = new InboxPage(driver);
+        trashPage = new TrashPage(driver);
+        trashPage.openPage();
         return trashPage.getDeletedMsgIndexInList(inboxPage.getFirstMsgSubjectAndBody()) >= 0;
     }
-
 
     public void initBrowser() {
         driver = DriverSingleton.getDriver();
@@ -75,8 +76,10 @@ public class Steps {
 
 
     public void openDrafts() {
-        LeftBarClass leftBarClass = new LeftBarClass(driver);
-        leftBarClass.pressDraftsButton();
+        CreateNewMailPage createNewMailPage = new CreateNewMailPage(driver);
+        DraftsPage draftsPage = new DraftsPage(driver);
+        draftsPage.openPage();
+        createNewMailPage.acceptAlert();
     }
 
 

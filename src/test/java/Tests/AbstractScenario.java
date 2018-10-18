@@ -9,7 +9,7 @@ public class AbstractScenario {
     protected Steps steps;
     protected String addressee;
     private final String USERNAME = "akwebdrivertest";
-    private final String PASSWORD = "San9san90394";
+    private final String PASSWORD = "12345aa";
 
     @BeforeClass(description = "Init browser and login")
     public void setUp(){
@@ -17,20 +17,9 @@ public class AbstractScenario {
         addressee = USERNAME;
     }
 
-//    @AfterClass(description = "Stop browser")
-//    public void stopBrowser(){
-//        steps.logOut();
-//        steps.closeDriver();
-//    }
-
     @Test
-    public void oneCanLoginMailRu() {
+    public void loginIntoMailRu() {
         steps.loginIntoMailRu(USERNAME, PASSWORD);
-        Assert.assertTrue(steps.checkForSuccessfulLogin());
     }
-//    protected void loginMailRu(){
-//        steps.loginIntoMailRu(USERNAME,PASSWORD);
-//        String mailRuTestLogin = DP.get("login");
-//        Assert.assertTrue(steps.isLoggedIn(mailRuTestLogin));
-//    }
+
 }

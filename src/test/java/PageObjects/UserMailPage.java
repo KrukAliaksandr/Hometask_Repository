@@ -12,7 +12,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class UserMailPage extends AbstractPage {
     private final String BASE_URL = "https://e.mail.ru/messages";
     private final String USERNAME = "akwebdrivertest@mail.ru";
-    private final String PASSWORD = "San9san90394";
+    private final String PASSWORD = "12345aa";
     private final int WAIT_SECONDS = 40;
     private  WebDriverWait wait;
 

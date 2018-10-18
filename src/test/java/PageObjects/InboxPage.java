@@ -5,7 +5,7 @@ import org.openqa.selenium.support.FindBy;
 import java.util.List;
 import org.openqa.selenium.WebDriver;
 
-    public class InboxPage extends LeftBarClass {
+    public class InboxPage extends AbstractPage {
 
         private final long WAIT_ELEMENT_VISIBILITY_SEC = 10;
 
@@ -44,6 +44,7 @@ import org.openqa.selenium.WebDriver;
             return this;
         }
 
+
         public InboxPage clickOnCheckboxWithId(int mailIndex){
             if (mailIndex >= 0){
                 mailCheckBoxList.get(mailIndex).click();
@@ -55,25 +56,18 @@ import org.openqa.selenium.WebDriver;
         }
 
         public InboxPage clickOnDeleteMailBtn(){
-            click(deleteMsgBtn);
-            sleep(2000);
-            logger.info("'Delete' message button has been clicked");
+            deleteMsgBtn.click();
             return this;
         }
 
         public InboxPage clickOnSpamBtn(){
-            click(spamBtn);
-            sleep(2000);
+            spamBtn.click();
             confirmSpamBtn.click();
-            logger.info("'Spam' button has been clicked");
-            sleep(1000);
             return this;
         }
 
         public InboxPage clickSelectAllMsgsCheckBox(){
-            click(selectAllCheckBox);
-            sleep(1000);
-            logger.info("'Select all' checkbox has been clicked");
+            selectAllCheckBox.click();
             return this;
         }
 

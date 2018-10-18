@@ -5,9 +5,10 @@ import org.openqa.selenium.support.FindBy;
 import java.util.List;
 
 
-    public class SpamPage extends LeftBarClass {
+    public class SpamPage extends AbstractPage {
 
         private final long WAIT_ELEMENT_VISIBILITY_SEC = 10;
+        private final String BASE_URL = "https://e.mail.ru/messages/spam/";
 
         @FindBy(xpath = "//*[@id='b-letters']/div[1]/div[5]/div/div[2]/div")
         private List<WebElement> spamMessagesList;
@@ -30,5 +31,8 @@ import java.util.List;
             return -1;
         }
 
+        public void openPage() {
+            driver.navigate().to(BASE_URL);
+        }
     }
 

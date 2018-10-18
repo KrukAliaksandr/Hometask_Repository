@@ -1,9 +1,6 @@
 package PageObjects;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -84,15 +81,9 @@ public class CreateNewMailPage extends AbstractPage {
         return this;
     }
 
-//    public void ClickDraftLink() {
-//        draftLink.click();
-//        js.executeScript("arguments[0].textContent= arguments[1];", text_area, text_msg);
-//        driver.switchTo().defaultContent();
-//        button_save_letter.click();
-//    }
-
-    public void ClickDraftLink() {
-        draft_link.click();
+    public void acceptAlert() {
+        Alert alert = driver.switchTo().alert();
+        alert.accept();
 
     }
 
