@@ -34,8 +34,9 @@ public class SentPage extends AbstractPage{
         return resultOfSearch;
     }
 
-    public void openPage() {
+    public SentPage openPage() {
         driver.navigate().to(BASE_URL);
+        return this;
     }
 }
 

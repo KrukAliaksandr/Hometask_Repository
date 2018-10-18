@@ -44,8 +44,9 @@ public class CreateNewMailPage extends AbstractPage {
     WebElement draft_link;
 
 
-    public void openPage() {
+    public CreateNewMailPage openPage() {
         driver.navigate().to(BASE_URL);
+        return this;
     }
 
     public CreateNewMailPage(WebDriver driver) {
@@ -54,7 +55,7 @@ public class CreateNewMailPage extends AbstractPage {
 
     }
 
-    public void fillNewMailMessage(String mail, String topic_text, String text_msg) {
+    public CreateNewMailPage fillNewMailMessage(String mail, String topic_text, String text_msg) {
 
         addressee.sendKeys(mail);
         topic.sendKeys(topic_text);
@@ -63,6 +64,7 @@ public class CreateNewMailPage extends AbstractPage {
         js.executeScript("arguments[0].textContent= arguments[1];", textArea, text_msg);
         driver.switchTo().defaultContent();
         buttonSaveLetter.click();
+        return this;
     }
 
 
@@ -81,9 +83,10 @@ public class CreateNewMailPage extends AbstractPage {
         return this;
     }
 
-    public void acceptAlert() {
+    public CreateNewMailPage acceptAlert() {
         Alert alert = driver.switchTo().alert();
         alert.accept();
+        return this;
 
     }
 

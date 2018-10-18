@@ -10,7 +10,6 @@ import java.util.List;
 
         private final long WAIT_ELEMENT_VISIBILITY_SEC = 10;
         private final String BASE_URL = "https://e.mail.ru/messages/trash";
-
         @FindBy(xpath = "//*[@id='b-letters']/div[1]/div[5]/div/div[2]/div")
         private List<WebElement> deleteMessagesList;
 
@@ -21,16 +20,19 @@ import java.util.List;
         public int getDeletedMsgIndexInList(String expectedSubjectAndBody) {
             getVisibleElements(deleteMessagesList, WAIT_ELEMENT_VISIBILITY_SEC);
             for (int i = 0; i < deleteMessagesList.size(); i++) {
+                System.out.println( deleteMessagesList.size());
                 String[] trashListItem = deleteMessagesList.get(i).getText().trim().split("\r\n|\n");
                 String trashSubjectAndBody = trashListItem[1].trim();
-                if (expectedSubjectAndBody.contains(trashSubjectAndBody)) {
+                System.out.println(trashSubjectAndBody + "_" + expectedSubjectAndBody);
+                if (trashSubjectAndBody.contains(expectedSubjectAndBody)) {
                     return i;
                 }
             }
 
             return -1;
         }
-        public void openPage() {
+        public TrashPage openPage() {
             driver.navigate().to(BASE_URL);
+            return this;
         }
     }

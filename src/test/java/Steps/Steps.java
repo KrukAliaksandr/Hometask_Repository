@@ -20,6 +20,7 @@ public class Steps {
     }
 
     public void chooseFirstMailAndMarkItAsSpam() {
+        inboxPage = new InboxPage(driver);
         inboxPage.readFirstMsgSubjectAndBody()
                 .clickOnCheckboxWithId(0)
                 .clickOnSpamBtn();
@@ -35,7 +36,7 @@ public class Steps {
         inboxPage = new InboxPage(driver);
         trashPage = new TrashPage(driver);
         trashPage.openPage();
-        return trashPage.getDeletedMsgIndexInList(inboxPage.getFirstMsgSubjectAndBody()) >= 0;
+        return trashPage.getDeletedMsgIndexInList("testtest") >= 0;
     }
 
     public void initBrowser() {

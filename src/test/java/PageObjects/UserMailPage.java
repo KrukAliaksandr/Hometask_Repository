@@ -51,11 +51,13 @@ public class UserMailPage extends AbstractPage {
         return getWebDriverWait().until(ExpectedConditions.visibilityOf(webElement)).getText();
     }
 
-    public void pressCreateMessageButton() {
+    public CreateNewMailPage pressCreateMessageButton() {
         buttonCreateNewMessage.click();
+        return new CreateNewMailPage(driver);
     }
-    public void pressLogoutButton() {
+    public AcccountLoginPage pressLogoutButton() {
         logoutButton.click();
+        return new AcccountLoginPage(driver);
     }
 
     public String getBASE_URL() {

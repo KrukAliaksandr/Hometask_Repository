@@ -56,7 +56,6 @@ public class DraftsPage extends AbstractPage {
         }
         return null;
 
-
     }
 
     public DraftsPage clickOnReference() {
@@ -64,8 +63,9 @@ public class DraftsPage extends AbstractPage {
         return this;
     }
 
-    public void openPage() {
+    public DraftsPage openPage() {
         driver.navigate().to("https://e.mail.ru/messages/drafts/");
+        return this;
     }
 
 }

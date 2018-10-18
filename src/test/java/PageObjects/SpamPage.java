@@ -31,8 +31,9 @@ import java.util.List;
             return -1;
         }
 
-        public void openPage() {
+        public SpamPage openPage() {
             driver.navigate().to(BASE_URL);
+            return this;
         }
     }
 
