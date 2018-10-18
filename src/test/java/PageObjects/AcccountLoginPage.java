@@ -27,7 +27,6 @@ public class AcccountLoginPage extends AbstractPage {
     @FindBy(xpath = "//input[@class = 'o-control']")
     private WebElement mailButton;
 
-    @Override
     public void openPage()
     {
         driver.navigate().to(BASE_URL);

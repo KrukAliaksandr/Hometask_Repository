@@ -47,8 +47,8 @@ public class UserMailPage extends AbstractPage {
         return wait;
     }
 
-    public WebElement returnAccountEmail(WebElement webElement) {
-        return getWebDriverWait().until(ExpectedConditions.visibilityOf(webElement));
+    public String returnAccountEmail(WebElement webElement) {
+        return getWebDriverWait().until(ExpectedConditions.visibilityOf(webElement)).getText();
     }
 
     public void pressCreateMessageButton() {
