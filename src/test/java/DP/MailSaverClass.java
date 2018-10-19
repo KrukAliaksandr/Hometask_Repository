@@ -1,7 +1,5 @@
-package PersonalClasses;
+package DP;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 
 import java.util.HashMap;
 
@@ -24,7 +22,7 @@ public class MailSaverClass {
         return mailBuffer.get("Addressee");
     }
 
-    public static void saveMailInBuffer(String subjectAndBody,String addressee){
+    public static void saveMailInBuffer(String subjectAndBody, String addressee) {
         mailBuffer.put("SubjectAndBody",subjectAndBody);
         mailBuffer.put("Addressee",addressee);
     }

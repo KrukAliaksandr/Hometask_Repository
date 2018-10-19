@@ -1,10 +1,12 @@
 package PageObjects;
 
+import DP.MailSaverClass;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 
@@ -12,7 +14,7 @@ public class CreateNewMailPage extends AbstractPage {
 
     Actions actions = new Actions(driver);
     private  String BASE_URL = "https://mail.ru/compose";
-    private  String mailReciever = "akwebdrivertest@mail.ru";
+    private  String mailReciever = "webdrivertestak@mail.ru";
     private  String mailTopic = "Test Message";
     private  String mailContent = "Test Content";
 
@@ -43,6 +45,12 @@ public class CreateNewMailPage extends AbstractPage {
     @FindBy(xpath = "//span[contains(text(),'Черновики')]")
     WebElement draft_link;
 
+    @FindBy(tagName = "iframe")
+    private WebElement iframeForTextField;
+
+    @FindBy(xpath = "//body[@id = 'tinymce']")
+    private WebElement bodyForTextField;
+
 
     public CreateNewMailPage openPage() {
         driver.navigate().to(BASE_URL);
@@ -55,23 +63,28 @@ public class CreateNewMailPage extends AbstractPage {
 
     }
 
-    public CreateNewMailPage fillNewMailMessage(String mail, String topic_text, String text_msg) {
+    public CreateNewMailPage fillNewMailMessageAndSaveToDraft(String mail, String topic_text, String text_msg) {
 
         addressee.sendKeys(mail);
         topic.sendKeys(topic_text);
-        driver.switchTo().frame(0);
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("arguments[0].textContent= arguments[1];", textArea, text_msg);
+        driver.switchTo().frame(iframeForTextField);
+        bodyForTextField.clear();
+        bodyForTextField.sendKeys(text_msg);
         driver.switchTo().defaultContent();
+        highlightElement(sendLink);
         buttonSaveLetter.click();
+        unHighlightElement(sendLink);
+        MailSaverClass.getMailBuffer();
+        MailSaverClass.saveMailInBuffer(topic_text + text_msg, mail);
         return this;
     }
 
 
     public CreateNewMailPage clickSendButton() {
-        WebDriverWait wait = new WebDriverWait(driver, 10);
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@data-name = 'send']")));
-        sendLink = driver.findElement(By.xpath("//div[@data-name = 'send']"));
+        sendLink = new WebDriverWait(driver,10).until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@data-name = 'send']")));
+//        getClickableElement(sendLink);
+        highlightElement(sendLink);
+        unHighlightElement(sendLink);
         sendLink.click();
         return this;
 

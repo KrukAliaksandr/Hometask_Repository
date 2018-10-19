@@ -1,4 +1,5 @@
 package PageObjects;
+import DP.MailSaverClass;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -15,23 +16,22 @@ public class SentPage extends AbstractPage{
         PageFactory.initElements(this.driver, this);
     }
 
-    public boolean findSentMailInDraft() {
+    public WebElement findMailInSent() {
+
         Collection<WebElement> collection = driver.findElements(By.xpath("//a[@rel = 'history'][@class = 'js-href b-datalist__item__link']"));
-        System.out.println(collection.size());
         Iterator<WebElement> iterator = collection.iterator();
-        boolean resultOfSearch = false;
         WebElement element = null;
         while (iterator.hasNext()) {
             element = iterator.next();
-            System.out.println(element.findElement(By.xpath("//div[@class = 'b-datalist__item__subj']")).getText());
-            System.out.println(element.findElement(By.xpath("//div[@class = 'b-datalist__item__addr']")).getText());
-            if (element.findElement(By.xpath("//div[@class = 'b-datalist__item__subj']")).getText().contains("Test MessageTest Content") &&
-                    element.findElement(By.xpath("//div[@class = 'b-datalist__item__addr']")).getText().contains("akwebdrivertest@mail.ru")) {
-                resultOfSearch = true;
+            if (element.findElement(By.xpath("//div[@class = 'b-datalist__item__subj']")).getText().substring(1).equals(MailSaverClass.getMailSubjectAndBody()) &&
+                    element.findElement(By.xpath("//div[@class = 'b-datalist__item__addr']")).getText().equals(MailSaverClass.getMailAddressee())) {
+
+                return element;
             }
 
         }
-        return resultOfSearch;
+        return null;
+
     }
 
     public SentPage openPage() {

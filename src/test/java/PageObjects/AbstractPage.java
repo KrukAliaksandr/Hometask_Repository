@@ -3,6 +3,7 @@ package PageObjects;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
@@ -69,9 +70,16 @@ public abstract class AbstractPage{
 
         public <T extends AbstractPage> T reloadPage(T page){
             this.driver.get(driver.getCurrentUrl());
-            logger.info("Page '" + driver.getCurrentUrl() + "' has been reloaded from '" + page.getClass().getSimpleName() + "'");
             return page;
         }
+
+    protected void highlightElement(WebElement element) {
+        ((JavascriptExecutor) driver).executeScript("arguments[0].style.border='3px solid green'", element);
+    }
+
+    protected void unHighlightElement(WebElement element) {
+        ((JavascriptExecutor) driver).executeScript("arguments[0].style.border='0px'", element);
+    }
 
         protected void sleep(long millis) {
             try {

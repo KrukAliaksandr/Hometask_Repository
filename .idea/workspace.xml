@@ -2,28 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e6369f3-3bc9-4590-812d-a5521b596946" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/MailBuffer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/DP/Screenshoter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/PageObjects/LeftBarClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/TestScenarios.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MailBuffer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/AbstractPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/AbstractPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/CreateNewMailPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/CreateNewMailPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/DraftsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/DraftsPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/InboxPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/InboxPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/SentPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/SentPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/SpamPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/SpamPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/TrashPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/TrashPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PersonalClasses/MailSaverClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PersonalClasses/MailSaverClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/UserMailPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/UserMailPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PersonalClasses/MailSaverClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DP/MailSaverClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Singleton/DriverSingleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Singleton/DriverSingleton.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Steps/Steps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Steps/Steps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/AbstractScenario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/AbstractScenario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/DeleteFirstInboxMessageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/DeleteFirstInboxMessageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/MarkFirstInboxMessageAsSpamTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/MarkFirstInboxMessageAsSpamTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/SendMessageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/SendMessageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/AbstractScenario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/DeleteFirstInboxMessageTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/MarkFirstInboxMessageAsSpamTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/SendMessageTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/MailBuffer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/AbstractPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/AbstractPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/CreateNewMailPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/CreateNewMailPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/DraftsPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/DraftsPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/InboxPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/InboxPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/SentPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/SentPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/SpamPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/SpamPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/TrashPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/TrashPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/UserMailPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/UserMailPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PersonalClasses/MailSaverClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Singleton/DriverSingleton.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Singleton/DriverSingleton.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/Steps/Steps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Steps/Steps.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Tests/AbstractScenario.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Tests/AbstractScenario.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Tests/DeleteFirstInboxMessageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Tests/DeleteFirstInboxMessageTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Tests/AbstractScenario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Tests/DeleteFirstInboxMessageTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Tests/MarkFirstInboxMessageAsSpamTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Tests/SendMessageTest.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,38 +51,41 @@
     <session id="410583306">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.27" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="3" />
-          <entry key="java" value="193" />
+          <entry key="class" value="5" />
+          <entry key="java" value="384" />
           <entry key="poperties" value="2" />
+          <entry key="properties" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="3" />
-          <entry key="JAVA" value="193" />
+          <entry key="CLASS" value="5" />
+          <entry key="JAVA" value="384" />
           <entry key="PLAIN_TEXT" value="2" />
+          <entry key="Properties" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="107" />
-          <entry key="java" value="1151" />
+          <entry key="dummy" value="125" />
+          <entry key="java" value="3238" />
           <entry key="poperties" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1151" />
-          <entry key="PLAIN_TEXT" value="114" />
+          <entry key="JAVA" value="3238" />
+          <entry key="PLAIN_TEXT" value="132" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -72,81 +93,59 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DeleteFirstInboxMessageTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Tests/DeleteFirstInboxMessageTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="12" column="43" lean-forward="true" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
-              <folding>
-                <element signature="e#188#189#0" expanded="true" />
-                <element signature="e#227#228#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SendMessageTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Tests/SendMessageTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SpamPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/SpamPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="21" column="49" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SentPage.java" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/SentPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            <state relative-caret-position="306">
+              <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TrashPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/TrashPage.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/SpamPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="16" selection-start-line="16" selection-end-line="17" selection-end-column="53" />
+            <state relative-caret-position="68">
+              <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MarkFirstInboxMessageAsSpamTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Tests/MarkFirstInboxMessageAsSpamTest.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/LeftBarClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+            <state relative-caret-position="235">
+              <caret line="37" column="29" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AbstractPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/AbstractPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="912">
-              <caret line="58" selection-start-line="58" selection-end-line="58" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InboxPage.java" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/InboxPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="912">
-              <caret line="56" column="25" selection-start-line="56" selection-start-column="25" selection-end-line="56" selection-end-column="25" />
+            <state relative-caret-position="17">
+              <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/DraftsPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="524">
+              <caret line="56" column="13" lean-forward="true" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/CreateNewMailPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="235">
+              <caret line="83" column="19" selection-start-line="83" selection-start-column="19" selection-end-line="83" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -154,11 +153,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AbstractScenario.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Tests/AbstractScenario.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/AcccountLoginPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+            <state relative-caret-position="17">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/DP/Screenshoter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -166,14 +174,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Steps.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Steps/Steps.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/DP/MailSaverClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="35" column="56" lean-forward="true" selection-start-line="35" selection-start-column="56" selection-end-line="35" selection-end-column="56" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="371">
+              <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/DP/DP.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-366">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -206,30 +220,35 @@
         <option value="$PROJECT_DIR$/src/test/java/Steps/SpamPageSteps.java" />
         <option value="$PROJECT_DIR$/src/test/java/PageObjects/DP/DP.java" />
         <option value="$PROJECT_DIR$/src/test/java/TestGen/TestGenerator.java" />
-        <option value="$PROJECT_DIR$/src/test/java/TestGen/TextGenerator.java" />
         <option value="$PROJECT_DIR$/src/test/java/DP/DP.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Singleton/DriverSingleton.java" />
         <option value="$PROJECT_DIR$/src/test/java/Steps/CreateNewMailSteps.java" />
         <option value="$PROJECT_DIR$/src/test/java/Tests/DemoTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/PageObjects/LeftBarClass.java" />
-        <option value="$PROJECT_DIR$/src/test/java/PageObjects/AbstractPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/Tests/DeleteFirstInboxMessage.java" />
         <option value="$PROJECT_DIR$/mail_config.poperties" />
         <option value="$PROJECT_DIR$/src/test/java/PageObjects/AcccountLoginPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/PageObjects/CreateNewMailPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/PageObjects/SentPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/PageObjects/UserMailPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/PageObjects/DraftsPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/MailBuffer.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Tests/AbstractScenario.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Tests/DeleteFirstInboxMessageTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/PersonalClasses/MailSaverClass.java" />
         <option value="$PROJECT_DIR$/src/test/java/PageObjects/TrashPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Tests/MarkFirstInboxMessageAsSpamTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/PageObjects/InboxPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/PageObjects/SpamPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Steps/Steps.java" />
+        <option value="$PROJECT_DIR$/src/test/java/TestGen/TextGenerator.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PageObjects/AbstractPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/MailBuffer.java" />
+        <option value="$PROJECT_DIR$/src/test/java/DP/ScreeenShooter.java" />
+        <option value="$PROJECT_DIR$/src/test/java/DP/Screenshooter.java" />
+        <option value="$PROJECT_DIR$/src/test/java/DP/Screenshoter.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Singleton/DriverSingleton.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Tests/DeleteFirstInboxMessageTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Tests/MarkFirstInboxMessageAsSpamTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/Tests/SendMessageTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PageObjects/LeftBarClass.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PageObjects/InboxPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/DP/MailSaverClass.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PageObjects/UserMailPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Steps/Steps.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Tests/AbstractScenario.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PageObjects/CreateNewMailPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PageObjects/DraftsPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Tests/TestScenarios.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PageObjects/SentPage.java" />
       </list>
     </option>
   </component>
@@ -249,17 +268,17 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-10" />
-    <option name="width" value="855" />
-    <option name="height" value="1020" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="833" />
+    <option name="width" value="854" />
+    <option name="height" value="1017" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -307,22 +326,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="PersonalClasses" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Hometask_Repository" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Hometask_Repository" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Singleton" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Hometask_Repository" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Hometask_Repository" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="Steps" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -351,13 +354,12 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539866090689" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539964995801" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -375,33 +377,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.DeleteFirstInboxMessageTest.deleteFirstMessageInInboxFolder">
+  <component name="RunManager">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method>
+      <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-      <method>
+      <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DeleteFirstInboxMessageTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestScenarios" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="WebDriverTask" />
       <extension name="coverage">
         <pattern>
@@ -409,28 +399,17 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.DeleteFirstInboxMessageTest" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="MAIN_CLASS_NAME" value="Tests.TestScenarios" />
       <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
       <properties />
       <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="DeleteFirstInboxMessageTest.deleteFirstMessageInInboxFolder" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestScenarios" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="WebDriverTask" />
       <extension name="coverage">
         <pattern>
@@ -438,28 +417,37 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.DeleteFirstInboxMessageTest" />
-      <option name="METHOD_NAME" value="deleteFirstMessageInInboxFolder" />
-      <option name="GROUP_NAME" />
+      <option name="MAIN_CLASS_NAME" value="Tests.TestScenarios" />
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestScenarios.checkSentMailInSentFolder" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="WebDriverTask" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.TestScenarios" />
+      <option name="METHOD_NAME" value="checkSentMailInSentFolder" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
       <properties />
       <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="MarkFirstInboxMessageAsSpamTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestScenarios.createMailAndPutItInDraftsFolder" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="WebDriverTask" />
       <extension name="coverage">
         <pattern>
@@ -467,57 +455,19 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.MarkFirstInboxMessageAsSpamTest" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <properties />
-      <listeners />
-    </configuration>
-    <configuration name="MarkFirstInboxMessageAsSpamTest.loginMailRu" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="WebDriverTask" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.MarkFirstInboxMessageAsSpamTest" />
-      <option name="METHOD_NAME" value="loginMailRu" />
-      <option name="GROUP_NAME" />
+      <option name="MAIN_CLASS_NAME" value="Tests.TestScenarios" />
+      <option name="METHOD_NAME" value="createMailAndPutItInDraftsFolder" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
       <properties />
       <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="MarkFirstInboxMessageAsSpamTest.markFirstMessageInInboxFolderAsSpam" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestScenarios.isLoggedIn" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="WebDriverTask" />
       <extension name="coverage">
         <pattern>
@@ -525,66 +475,41 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.MarkFirstInboxMessageAsSpamTest" />
-      <option name="METHOD_NAME" value="markFirstMessageInInboxFolderAsSpam" />
-      <option name="GROUP_NAME" />
+      <option name="MAIN_CLASS_NAME" value="Tests.TestScenarios" />
+      <option name="METHOD_NAME" value="isLoggedIn" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
       <properties />
       <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
       <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
       <properties />
       <listeners />
-      <method>
+      <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG.DeleteFirstInboxMessageTest" />
-      <item itemvalue="TestNG.DeleteFirstInboxMessageTest.deleteFirstMessageInInboxFolder" />
-      <item itemvalue="TestNG.MarkFirstInboxMessageAsSpamTest.loginMailRu" />
-      <item itemvalue="TestNG.MarkFirstInboxMessageAsSpamTest" />
-      <item itemvalue="TestNG.MarkFirstInboxMessageAsSpamTest.markFirstMessageInInboxFolderAsSpam" />
+      <item itemvalue="TestNG.TestScenarios" />
+      <item itemvalue="TestNG.TestScenarios" />
+      <item itemvalue="TestNG.TestScenarios.createMailAndPutItInDraftsFolder" />
+      <item itemvalue="TestNG.TestScenarios.isLoggedIn" />
+      <item itemvalue="TestNG.TestScenarios.checkSentMailInSentFolder" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.DeleteFirstInboxMessageTest.deleteFirstMessageInInboxFolder" />
-        <item itemvalue="TestNG.MarkFirstInboxMessageAsSpamTest.markFirstMessageInInboxFolderAsSpam" />
-        <item itemvalue="TestNG.MarkFirstInboxMessageAsSpamTest" />
-        <item itemvalue="TestNG.DeleteFirstInboxMessageTest" />
-        <item itemvalue="TestNG.MarkFirstInboxMessageAsSpamTest.loginMailRu" />
+        <item itemvalue="TestNG.TestScenarios.checkSentMailInSentFolder" />
+        <item itemvalue="TestNG.TestScenarios" />
+        <item itemvalue="TestNG.TestScenarios.isLoggedIn" />
+        <item itemvalue="TestNG.TestScenarios.createMailAndPutItInDraftsFolder" />
+        <item itemvalue="TestNG.TestScenarios" />
       </list>
     </recent_temporary>
   </component>
@@ -622,75 +547,75 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DeleteFirstInboxMessageTest_deleteFirstMessageInInboxFolder - 2018.10.19 at 07h 57m 27s.xml">
-      <configuration name="DeleteFirstInboxMessageTest.deleteFirstMessageInInboxFolder" configurationId="TestNG" />
+    <history-entry file="AbstractScenario_checkSentMailInSentFolder - 2018.10.19 at 18h 35m 58s.xml">
+      <configuration name="AbstractScenario.checkSentMailInSentFolder" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="DeleteFirstInboxMessageTest_deleteFirstMessageInInboxFolder - 2018.10.19 at 08h 00m 13s.xml">
-      <configuration name="DeleteFirstInboxMessageTest.deleteFirstMessageInInboxFolder" configurationId="TestNG" />
+    <history-entry file="AbstractScenario_(1) - 2018.10.19 at 18h 36m 34s.xml">
+      <configuration name="AbstractScenario (1)" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="DeleteFirstInboxMessageTest - 2018.10.19 at 08h 01m 30s.xml">
-      <configuration name="DeleteFirstInboxMessageTest" configurationId="TestNG" />
+    <history-entry file="AbstractScenario_(1) - 2018.10.19 at 18h 39m 47s.xml">
+      <configuration name="AbstractScenario (1)" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="DeleteFirstInboxMessageTest_deleteFirstMessageInInboxFolder - 2018.10.19 at 08h 06m 50s.xml">
-      <configuration name="DeleteFirstInboxMessageTest.deleteFirstMessageInInboxFolder" configurationId="TestNG" />
+    <history-entry file="TestScenarios - 2018.10.19 at 18h 54m 48s.xml">
+      <configuration name="TestScenarios" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="DeleteFirstInboxMessageTest - 2018.10.19 at 08h 41m 24s.xml">
-      <configuration name="DeleteFirstInboxMessageTest" configurationId="TestNG" />
+    <history-entry file="TestScenarios - 2018.10.19 at 18h 56m 34s.xml">
+      <configuration name="TestScenarios" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MarkFirstInboxMessageAsSpamTest - 2018.10.19 at 08h 52m 27s.xml">
-      <configuration name="MarkFirstInboxMessageAsSpamTest" configurationId="TestNG" />
+    <history-entry file="TestScenarios_checkSentMailInSentFolder - 2018.10.19 at 18h 57m 41s.xml">
+      <configuration name="TestScenarios.checkSentMailInSentFolder" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MarkFirstInboxMessageAsSpamTest - 2018.10.19 at 08h 55m 11s.xml">
-      <configuration name="MarkFirstInboxMessageAsSpamTest" configurationId="TestNG" />
+    <history-entry file="TestScenarios_checkSentMailInSentFolder - 2018.10.19 at 18h 57m 47s.xml">
+      <configuration name="TestScenarios.checkSentMailInSentFolder" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MarkFirstInboxMessageAsSpamTest_markFirstMessageInInboxFolderAsSpam - 2018.10.19 at 09h 02m 18s.xml">
-      <configuration name="MarkFirstInboxMessageAsSpamTest.markFirstMessageInInboxFolderAsSpam" configurationId="TestNG" />
+    <history-entry file="TestScenarios_checkSentMailInSentFolder - 2018.10.19 at 18h 58m 48s.xml">
+      <configuration name="TestScenarios.checkSentMailInSentFolder" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="DeleteFirstInboxMessageTest_deleteFirstMessageInInboxFolder - 2018.10.19 at 09h 03m 48s.xml">
-      <configuration name="DeleteFirstInboxMessageTest.deleteFirstMessageInInboxFolder" configurationId="TestNG" />
+    <history-entry file="TestScenarios_checkSentMailInSentFolder - 2018.10.19 at 19h 00m 43s.xml">
+      <configuration name="TestScenarios.checkSentMailInSentFolder" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="DeleteFirstInboxMessageTest_deleteFirstMessageInInboxFolder - 2018.10.19 at 09h 04m 12s.xml">
-      <configuration name="DeleteFirstInboxMessageTest.deleteFirstMessageInInboxFolder" configurationId="TestNG" />
+    <history-entry file="TestScenarios_checkSentMailInSentFolder - 2018.10.19 at 19h 01m 44s.xml">
+      <configuration name="TestScenarios.checkSentMailInSentFolder" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="24638000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info id="DB Browser" order="4" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32763532" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19682151" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
+      <window_info id="DB Browser" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Capture Tool" order="7" />
+      <window_info id="Learn" order="8" weight="0.3294621" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32847533" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32735425" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="DB Execution Console" order="7" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32735425" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="12" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32763532" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info id="Capture Tool" order="7" />
-      <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19463088" />
-      <window_info anchor="right" id="Database" order="6" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="5" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info id="Learn" order="8" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32905984" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -700,86 +625,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/AbstractPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="16" column="51" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Steps/CreateNewMailSteps.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/Steps/InboxPageSteps.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/LeftBarClass.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/Assert.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/InboxPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="86" column="16" selection-start-line="86" selection-start-column="16" selection-end-line="86" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Tests/MarkFirstInboxMessageAsSpamTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Tests/DeleteFirstInboxMessageTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Tests/DemoTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/Steps/Steps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="105" column="72" selection-start-line="105" selection-start-column="72" selection-end-line="105" selection-end-column="72" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/UserMailPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-315">
-          <caret line="14" column="33" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Tests/AbstractScenario.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TestGen/TextGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/MailBuffer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/uiDesigner.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -821,46 +667,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/LeftBarClass.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-support/3.14.0/selenium-support-3.14.0.jar!/org/openqa/selenium/support/ui/FluentWait.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="125" selection-start-line="125" selection-end-line="125" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mail_config.poperties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="23" lean-forward="true" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/DP/DP.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/AcccountLoginPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TestGen/TextGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Singleton/DriverSingleton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -871,105 +681,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PersonalClasses/MailSaverClass.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/MailBuffer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="22" column="41" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#558#559#0" expanded="true" />
-            <element signature="e#606#607#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/DraftsPage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/DP/ScreeenShooter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="50" column="104" selection-start-line="50" selection-start-column="11" selection-end-line="50" selection-end-column="104" />
-          <caret line="51" column="104" selection-start-line="51" selection-start-column="11" selection-end-line="51" selection-end-column="104" />
+        <state>
+          <caret lean-forward="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/CreateNewMailPage.java">
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_Demo-M7-Java.zip/M7_Demo_Java/demo_java/demo_7/src/main/java/utils/Screenshoter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="306">
+          <caret line="24" column="5" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="24" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/UserMailPage.java">
+    <entry file="file://$PROJECT_DIR$/src/Resources.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/SuiteRunnerWorker.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="14" column="33" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="33" />
+        <state relative-caret-position="191">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/TrashPage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Singleton/DriverSingleton.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="16" selection-start-line="16" selection-end-line="17" selection-end-column="53" />
+        <state relative-caret-position="136">
+          <caret line="26" column="35" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/SentPage.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-support/3.14.0/selenium-support-3.14.0.jar!/org/openqa/selenium/support/ui/FluentWait.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/InboxPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="912">
-          <caret line="56" column="25" selection-start-line="56" selection-start-column="25" selection-end-line="56" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="191">
+          <caret line="112" selection-start-line="112" selection-end-line="112" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/AbstractPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="912">
-          <caret line="58" selection-start-line="58" selection-end-line="58" />
+        <state relative-caret-position="184">
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/SpamPage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Tests/DeleteFirstInboxMessageTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="21" column="49" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Steps/Steps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="35" column="56" lean-forward="true" selection-start-line="35" selection-start-column="56" selection-end-line="35" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="85">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Tests/SendMessageTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Tests/AbstractScenario.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+        <state relative-caret-position="-170">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -978,19 +752,132 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Tests/MarkFirstInboxMessageAsSpamTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+        <state relative-caret-position="68">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Tests/DeleteFirstInboxMessageTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Tests/TestScenarios.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="12" column="43" lean-forward="true" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
+        <state relative-caret-position="93">
+          <caret line="49" column="9" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
           <folding>
-            <element signature="e#188#189#0" expanded="true" />
-            <element signature="e#227#228#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#610#611#0" expanded="true" />
+            <element signature="e#676#677#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestGen/TextGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Steps/Steps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="98" column="33" lean-forward="true" selection-start-line="98" selection-start-column="33" selection-end-line="98" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#462#463#0" expanded="true" />
+            <element signature="e#514#515#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/UserMailPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="56" column="5" lean-forward="true" selection-start-line="53" selection-start-column="3" selection-end-line="56" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/TrashPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/SpamPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/LeftBarClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="37" column="29" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/InboxPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/DraftsPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="524">
+          <caret line="56" column="13" lean-forward="true" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/CreateNewMailPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="83" column="19" selection-start-line="83" selection-start-column="19" selection-end-line="83" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/AcccountLoginPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/DP/Screenshoter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/DP/MailSaverClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/DP/DP.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-366">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/SentPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
         </state>
       </provider>
     </entry>

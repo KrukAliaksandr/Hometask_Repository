@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class UserMailPage extends AbstractPage {
     private final String BASE_URL = "https://e.mail.ru/messages";
-    private final String USERNAME = "akwebdrivertest@mail.ru";
+    private final String USERNAME = "webdrivertestak@mail.ru";
     private final String PASSWORD = "12345aa";
     private final int WAIT_SECONDS = 40;
     private  WebDriverWait wait;
@@ -55,9 +55,10 @@ public class UserMailPage extends AbstractPage {
         buttonCreateNewMessage.click();
         return new CreateNewMailPage(driver);
     }
-    public AcccountLoginPage pressLogoutButton() {
+
+    public UserMailPage pressLogoutButton() {
         logoutButton.click();
-        return new AcccountLoginPage(driver);
+        return this;
     }
 
     public String getBASE_URL() {

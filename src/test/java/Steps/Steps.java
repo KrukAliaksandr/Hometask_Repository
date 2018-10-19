@@ -34,7 +34,6 @@ public class Steps {
     }
 
     public boolean isDeletedMailPresentInTrashFolder() {
-        inboxPage = new InboxPage(driver);
         trashPage = new TrashPage(driver);
         trashPage.openPage();
         return trashPage.checkForDeletedMessage("testtest") >= 0;
@@ -48,7 +47,7 @@ public class Steps {
 
     public void fillNewMailAndSaveAsDraft() {
         CreateNewMailPage createNewMailPage = new CreateNewMailPage(driver);
-        createNewMailPage.fillNewMailMessage(createNewMailPage.getMailReciever(), createNewMailPage.getMailTopic(), createNewMailPage.getMailContent());
+        createNewMailPage.fillNewMailMessageAndSaveToDraft(createNewMailPage.getMailReciever(), createNewMailPage.getMailTopic(), createNewMailPage.getMailContent());
     }
 
     public boolean searchforDrafts() {
@@ -58,7 +57,7 @@ public class Steps {
 
     }
 
-    public boolean isMailInDraftDissapeared() {
+    public boolean sendMailFromDraft() {
         DraftsPage draftsPage = new DraftsPage(driver);
         draftsPage.openPage();
         draftsPage.clickOnReference();
@@ -71,13 +70,12 @@ public class Steps {
 
     public void chooseFirstMailAndDeleteIt() {
         InboxPage inboxPage = new InboxPage(driver);
-        inboxPage.readFirstMsgSubjectAndBody()
-                .clickOnCheckboxWithId(0)
-                .clickOnDeleteMailBtn();
+        inboxPage.readFirstMsgSubjectAndBody().deleteFirstMailUsingActions();
+
     }
 
 
-    public void openDrafts() {
+    public void openDraftsWithAcceptAlert() {
         CreateNewMailPage createNewMailPage = new CreateNewMailPage(driver);
         DraftsPage draftsPage = new DraftsPage(driver);
         draftsPage.openPage();
@@ -98,12 +96,12 @@ public class Steps {
     public boolean mailIsPresentInSentFolder() {
         SentPage sentPage = new SentPage(driver);
         sentPage.openPage();
-        return sentPage.findSentMailInDraft();
+        return sentPage.findMailInSent()!= null;
     }
 
     public void createNewMail() {
-        UserMailPage userMailPage = new UserMailPage(driver);
-        userMailPage.pressCreateMessageButton();
+        LeftBarClass leftBarClass = new LeftBarClass(driver);
+        leftBarClass.pressCreateMessageButton();
     }
 
     public boolean checkForSuccessfulLogin() {
@@ -111,10 +109,10 @@ public class Steps {
         return (userMailPage.getUSERNAME()).equals(userMailPage.returnAccountEmail(userMailPage.getAccountCurrentEmail()));
     }
 
-    public void logOut() {
-        UserMailPage userMailPage = new UserMailPage(driver);
-        userMailPage.pressLogoutButton();
-    }
+//    public void logOut() {
+//        UserMailPage userMailPage = new UserMailPage(driver);
+//        userMailPage.pressLogoutButton();
+//    }
 
 }
 
