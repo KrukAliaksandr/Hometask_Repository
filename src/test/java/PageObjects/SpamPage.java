@@ -1,4 +1,6 @@
 package PageObjects;
+import PersonalClasses.MailSaverClass;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -10,24 +12,23 @@ import java.util.List;
         private final long WAIT_ELEMENT_VISIBILITY_SEC = 10;
         private final String BASE_URL = "https://e.mail.ru/messages/spam/";
 
-        @FindBy(xpath = "//*[@id='b-letters']/div[1]/div[5]/div/div[2]/div")
+        @FindBy(xpath = "//*[@class='b-datalist__item__info']")
         private List<WebElement> spamMessagesList;
 
         public SpamPage(WebDriver driver) {
             super(driver);
         }
 
-        public int getMsgIndexInListMarkedAsSpam(String expectedSubjectAndBody) {
+        public int getMsgIndexInListMarkedAsSpam() {
             getVisibleElements(spamMessagesList, WAIT_ELEMENT_VISIBILITY_SEC);
+            System.out.println( spamMessagesList.size());
             for (int i = 0; i < spamMessagesList.size(); i++) {
-                String[] trashListItem = spamMessagesList.get(i).getText().trim().split("\r\n|\n");
-                String trashSubjectAndBody = trashListItem[1].trim();
-                if (expectedSubjectAndBody.contains(trashSubjectAndBody)) {
-                    logger.info("Message is found in Spam folder: sbj&body: '" + trashSubjectAndBody + "'");
+                if (spamMessagesList.get(i).findElement(By.xpath("//div[@class = 'b-datalist__item__subj']")).getText().equals((MailSaverClass.getMailSubjectAndBody())) &&
+                        spamMessagesList.get(i).findElement(By.xpath("//div[@class = 'b-datalist__item__addr']")).getText().equals((MailSaverClass.getMailAddressee())))
+                {
                     return i;
                 }
             }
-            logger.info("Message is NOT found in Spam folder");
             return -1;
         }
 

@@ -12,7 +12,7 @@ public class DeleteFirstInboxMessageTest extends AbstractScenario {
 
     @Test(dependsOnMethods = "loginMailRu")
     public void deleteFirstMessageInInboxFolder(){
-        steps.chooseFirstMailAndMarkItAsSpam();
+        steps.chooseFirstMailAndDeleteIt();
         Assert.assertTrue(steps.isDeletedMailPresentInTrashFolder());
     }
 

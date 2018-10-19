@@ -1,5 +1,7 @@
 package PageObjects;
 
+import PersonalClasses.MailSaverClass;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -12,19 +14,20 @@ import java.util.List;
         private final String BASE_URL = "https://e.mail.ru/messages/trash";
         @FindBy(xpath = "//*[@id='b-letters']/div[1]/div[5]/div/div[2]/div")
         private List<WebElement> deleteMessagesList;
+        @FindBy(xpath = "//*[@class='b-datalist__item__info']")
+        private List<WebElement> deletedMessagesList;
 
         public TrashPage(WebDriver driver) {
             super(driver);
         }
 
-        public int getDeletedMsgIndexInList(String expectedSubjectAndBody) {
-            getVisibleElements(deleteMessagesList, WAIT_ELEMENT_VISIBILITY_SEC);
-            for (int i = 0; i < deleteMessagesList.size(); i++) {
-                System.out.println( deleteMessagesList.size());
-                String[] trashListItem = deleteMessagesList.get(i).getText().trim().split("\r\n|\n");
-                String trashSubjectAndBody = trashListItem[1].trim();
-                System.out.println(trashSubjectAndBody + "_" + expectedSubjectAndBody);
-                if (trashSubjectAndBody.contains(expectedSubjectAndBody)) {
+        public int checkForDeletedMessage(String expectedSubjectAndBody) {
+            getVisibleElements(deletedMessagesList, WAIT_ELEMENT_VISIBILITY_SEC);
+            System.out.println( deletedMessagesList.size());
+            for (int i = 0; i < deletedMessagesList.size(); i++) {
+                if (deletedMessagesList.get(i).findElement(By.xpath("//div[@class = 'b-datalist__item__subj']")).getText().equals((MailSaverClass.getMailSubjectAndBody())) &&
+                        deletedMessagesList.get(i).findElement(By.xpath("//div[@class = 'b-datalist__item__addr']")).getText().equals((MailSaverClass.getMailAddressee())))
+                {
                     return i;
                 }
             }

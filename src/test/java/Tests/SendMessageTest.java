@@ -6,7 +6,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 @Test
-public class SendMessageTest {
+public class SendMessageTest extends AbstractScenario{
 
     private Steps steps;
     private final String USERNAME = "akwebdrivertest";
@@ -22,8 +22,7 @@ public class SendMessageTest {
 
     @Test
     public void loginMailRu() {
-        steps.loginIntoMailRu(USERNAME, PASSWORD);
-        Assert.assertTrue(steps.checkForSuccessfulLogin());
+        super.loginIntoMailRu();
 
     }
     @Test(dependsOnMethods = "loginMailRu")

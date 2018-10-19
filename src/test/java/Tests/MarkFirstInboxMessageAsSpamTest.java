@@ -12,7 +12,7 @@ public class MarkFirstInboxMessageAsSpamTest extends AbstractScenario {
 
     @Test(dependsOnMethods = "loginMailRu")
     public void markFirstMessageInInboxFolderAsSpam (){
-        steps.chooseFirstMailAndDeleteIt();
+        steps.chooseFirstMailAndMarkItAsSpam();
         Assert.assertTrue(steps.isMailPresentInSpamFolder());
     }
 }

@@ -1,9 +1,12 @@
 package PageObjects;
 
+import PersonalClasses.MailSaverClass;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+
 import java.util.List;
-import org.openqa.selenium.WebDriver;
 
     public class InboxPage extends AbstractPage {
 
@@ -32,15 +35,21 @@ import org.openqa.selenium.WebDriver;
         @FindBy(xpath = "//div[@data-group='selectAll']")
         private WebElement selectAllCheckBox;
 
+        @FindBy(className = "b-datalist__item__info")
+        private WebElement firstMailOnPage;
+
+
         public InboxPage(WebDriver driver) {
             super(driver);
         }
 
-        public InboxPage readFirstMsgSubjectAndBody(){
+        public InboxPage readFirstMsgSubjectAndBody() {
             getVisibleElements(inboxMessagesList, WAIT_ELEMENT_VISIBILITY_SEC);
-            String[] inboxListItem = inboxMessagesList.get(0).getText().trim().split("\r\n|\n");
-            firstMsgSubjectAndBody = inboxListItem[1].trim();
-            logger.info("Message with '" + firstMsgSubjectAndBody + "' has been read");
+            String mailSubjAndBody=firstMailOnPage.findElement(By.xpath("//div[@class = 'b-datalist__item__subj']")).getText().substring(1);
+            String mailAddressee = firstMailOnPage.findElement(By.xpath("//div[@class = 'b-datalist__item__addr']")).getText();
+            MailSaverClass.getMailBuffer();
+            System.out.println(mailSubjAndBody+"_"+mailAddressee);
+            MailSaverClass.saveMailInBuffer(mailSubjAndBody,mailAddressee);
             return this;
         }
 

@@ -28,15 +28,16 @@ public class Steps {
     }
 
     public boolean isMailPresentInSpamFolder() {
+        SpamPage spamPage = new SpamPage(driver);
         spamPage.openPage();
-        return spamPage.getMsgIndexInListMarkedAsSpam(inboxPage.getFirstMsgSubjectAndBody()) >= 0;
+        return spamPage.getMsgIndexInListMarkedAsSpam() >= 0;
     }
 
     public boolean isDeletedMailPresentInTrashFolder() {
         inboxPage = new InboxPage(driver);
         trashPage = new TrashPage(driver);
         trashPage.openPage();
-        return trashPage.getDeletedMsgIndexInList("testtest") >= 0;
+        return trashPage.checkForDeletedMessage("testtest") >= 0;
     }
 
     public void initBrowser() {
