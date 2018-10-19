@@ -1,4 +1,4 @@
-package DP;
+package AdditionalClasses;
 
 import Singleton.DriverSingleton;
 import org.apache.maven.surefire.shade.org.apache.maven.shared.utils.io.FileUtils;
