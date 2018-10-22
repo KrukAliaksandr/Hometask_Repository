@@ -11,17 +11,21 @@ public class LeftBarClass extends AbstractPage{
     @FindBy(xpath = "//div[@class='b-toolbar__item']")
     private WebElement buttonCreateNewMessage;
 
-    @FindBy(xpath = "//div[@data-id='500002']")
+    @FindBy(xpath = "//div[@data-id='0']")
     private WebElement inboxMessagesButton;
 
-    @FindBy(xpath = "//a[@href='/messages/sent/']")
+    @FindBy(xpath = "//div[@data-id='500000']")
     private WebElement sentMessagesButton;
 
-    @FindBy(xpath = "//a[@href='/messages/drafts/']")
+    @FindBy(xpath = "//div[@data-id='500001']")
     private WebElement draftMessagesButton;
+
+    @FindBy(xpath = "//div[@data-id='950']")
+    private WebElement spamMessagesButton;
 
     @FindBy(xpath = "//div[@data-id='500002']")
     private WebElement deletedMessagesButton;
+
 
 
     public LeftBarClass  openPage()
@@ -40,6 +44,35 @@ public class LeftBarClass extends AbstractPage{
         return new CreateNewMailPage(driver);
     }
 
+    public DraftsPage clickDraftsPage(){
+        draftMessagesButton.click();
+        return new DraftsPage(driver);
+    }
+
+    public SentPage clickSentPage() {
+        sentMessagesButton.click();
+        return new SentPage(driver);
+    }
+
+    public SpamPage clickSpamPage() {
+        spamMessagesButton.click();
+        return new SpamPage(driver);
+    }
+
+    public InboxPage clickInboxPage() {
+        inboxMessagesButton.click();
+        return new InboxPage(driver);
+    }
+
+    public TrashPage clickTrashPage() {
+        deletedMessagesButton.click();
+        return new TrashPage(driver);
+    }
+
+    public WebElement getButtonCreateNewMessage() {
+        return buttonCreateNewMessage;
+    }
+
     public WebElement getInboxMessagesButton() {
         return inboxMessagesButton;
     }
@@ -52,8 +85,11 @@ public class LeftBarClass extends AbstractPage{
         return draftMessagesButton;
     }
 
+    public WebElement getSpamMessagesButton() {
+        return spamMessagesButton;
+    }
+
     public WebElement getDeletedMessagesButton() {
         return deletedMessagesButton;
     }
-
 }

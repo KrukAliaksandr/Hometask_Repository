@@ -9,9 +9,9 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 
-public class UserMailPage extends AbstractPage {
+public class UserMailPage extends LeftBarClass {
     private final String BASE_URL = "https://e.mail.ru/messages";
-    private final String USERNAME = "webdrivertestak@mail.ru";
+    private final String USERNAME = "aliaksandrkrukwd@mail.ru";
     private final String PASSWORD = "12345aa";
     private final int WAIT_SECONDS = 40;
     private  WebDriverWait wait;
@@ -31,8 +31,9 @@ public class UserMailPage extends AbstractPage {
         return accountCurrentEmail;
     }
 
-    public void openPage() {
+    public UserMailPage openPage() {
         driver.navigate().to(BASE_URL);
+        return this;
     }
 
     public UserMailPage(WebDriver driver) {

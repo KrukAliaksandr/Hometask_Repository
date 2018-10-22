@@ -15,7 +15,7 @@ import java.util.function.Function;
 
 import static java.util.concurrent.TimeUnit.SECONDS;
 
-public class AcccountLoginPage extends AbstractPage {
+public class AcccountLoginPage extends LeftBarClass {
     private final String BASE_URL = "https://mail.ru/";
 
     @FindBy(id = "mailbox:login")

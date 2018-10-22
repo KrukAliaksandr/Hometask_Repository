@@ -19,6 +19,55 @@ public class Steps {
         driver = DriverSingleton.getDriver();
     }
 
+
+    public void initBrowser() {
+        driver = DriverSingleton.getDriver();
+        driver.manage().timeouts().implicitlyWait(
+                IMPLICIT_DELAY, TimeUnit.SECONDS);
+    }
+
+    public boolean checkForSuccessfulLogin() {
+        UserMailPage userMailPage = new UserMailPage(driver);
+        return (userMailPage.getUSERNAME()).equals(userMailPage.returnAccountEmail(userMailPage.getAccountCurrentEmail()));
+    }
+
+    public boolean isMailPresentInDrafts() {
+        LeftBarClass leftBarClass = new LeftBarClass(driver);
+        return (leftBarClass.clickDraftsPage().findMailInDraft() != null);
+    }
+
+    public void saveCreatedMailAndSendItFromDraft() {
+        CreateNewMailPage createNewMailPage = new CreateNewMailPage(driver);
+        createNewMailPage.pressCreateMessageButton().fillNewMailMessageAndSaveToDraft(createNewMailPage.getMailReciever(), createNewMailPage.getMailTopic(), createNewMailPage.getMailContent());
+        createNewMailPage.moveToDraftsAndAcceptAlert();
+        DraftsPage draftsPage = new DraftsPage(driver);
+        draftsPage.openPage().clickOnSavedMailInDrafts(draftsPage.findMailInDraft()).clickSendButton();
+    }
+
+    public void chooseFirstMailAndDeleteIt() {
+        InboxPage inboxPage = new InboxPage(driver);
+        inboxPage.readFirstMsgSubjectAndBody().deleteFirstMailUsingActions();
+    }
+
+    public void saveCreatedMailAndGoToDraftsPage() {
+        LeftBarClass leftBarClass = new LeftBarClass(driver);
+        CreateNewMailPage createNewMailPage = leftBarClass.pressCreateMessageButton();
+        createNewMailPage.fillNewMailMessageAndSaveToDraft(createNewMailPage.getMailReciever(), createNewMailPage.getMailTopic(), createNewMailPage.getMailContent());
+        DraftsPage draftsPage = leftBarClass.clickDraftsPage();
+        createNewMailPage.moveToDraftsAndAcceptAlert();
+    }
+
+    public void loginIntoMailRu(String username, String password) {
+        AcccountLoginPage loginPage = new AcccountLoginPage(driver);
+        loginPage.openPage();
+        loginPage.login(username, password);
+    }
+
+    public boolean isMailPresentInSent() {
+        LeftBarClass leftBarClass = new LeftBarClass(driver);
+        return  leftBarClass.clickSentPage().findMailInSent()!= null;
+    }
+
     public void chooseFirstMailAndMarkItAsSpam() {
         inboxPage = new InboxPage(driver);
         inboxPage.readFirstMsgSubjectAndBody()
@@ -38,81 +87,14 @@ public class Steps {
         trashPage.openPage();
         return trashPage.checkForDeletedMessage("testtest") >= 0;
     }
-
-    public void initBrowser() {
-        driver = DriverSingleton.getDriver();
-        driver.manage().timeouts().implicitlyWait(
-                IMPLICIT_DELAY, TimeUnit.SECONDS);
-    }
-
-    public void fillNewMailAndSaveAsDraft() {
-        CreateNewMailPage createNewMailPage = new CreateNewMailPage(driver);
-        createNewMailPage.fillNewMailMessageAndSaveToDraft(createNewMailPage.getMailReciever(), createNewMailPage.getMailTopic(), createNewMailPage.getMailContent());
-    }
-
-    public boolean searchforDrafts() {
-        DraftsPage draftsPage = new DraftsPage(driver);
-        draftsPage.openPage();
-        return (draftsPage.findMailInDraft() != null);
-
-    }
-
-    public boolean sendMailFromDraft() {
-        DraftsPage draftsPage = new DraftsPage(driver);
-        draftsPage.openPage();
-        draftsPage.clickOnReference();
-        CreateNewMailPage createNewMailPage = new CreateNewMailPage(driver);
-        createNewMailPage.clickSendButton();
-        createNewMailPage.mailIsSentMessage();
-        draftsPage.openPage();
-        return (draftsPage.findMailInDraft() == null);
-    }
-
-    public void chooseFirstMailAndDeleteIt() {
-        InboxPage inboxPage = new InboxPage(driver);
-        inboxPage.readFirstMsgSubjectAndBody().deleteFirstMailUsingActions();
-
-    }
-
-
-    public void openDraftsWithAcceptAlert() {
-        CreateNewMailPage createNewMailPage = new CreateNewMailPage(driver);
-        DraftsPage draftsPage = new DraftsPage(driver);
-        draftsPage.openPage();
-        createNewMailPage.acceptAlert();
-    }
-
-
-    public void closeDriver() {
-        DriverSingleton.closeDriver();
-    }
-
-    public void loginIntoMailRu(String username, String password) {
-        AcccountLoginPage loginPage = new AcccountLoginPage(driver);
-        loginPage.openPage();
-        loginPage.login(username, password);
-    }
-
-    public boolean mailIsPresentInSentFolder() {
-        SentPage sentPage = new SentPage(driver);
-        sentPage.openPage();
-        return sentPage.findMailInSent()!= null;
-    }
-
-    public void createNewMail() {
-        LeftBarClass leftBarClass = new LeftBarClass(driver);
-        leftBarClass.pressCreateMessageButton();
-    }
-
-    public boolean checkForSuccessfulLogin() {
-        UserMailPage userMailPage = new UserMailPage(driver);
-        return (userMailPage.getUSERNAME()).equals(userMailPage.returnAccountEmail(userMailPage.getAccountCurrentEmail()));
-    }
-
 //    public void logOut() {
 //        UserMailPage userMailPage = new UserMailPage(driver);
 //        userMailPage.pressLogoutButton();
 //    }
+
+    public void closeDriver() {
+        DriverSingleton.closeDriver();
+    }
 
 }
 

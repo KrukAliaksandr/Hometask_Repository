@@ -4,10 +4,12 @@ import AdditionalClasses.MailSaverClass;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.Collection;
@@ -17,17 +19,16 @@ import java.util.List;
 import static java.lang.Thread.sleep;
 
 
-public class DraftsPage extends AbstractPage {
+public class DraftsPage extends LeftBarClass {
 
     private final String BASE_URL = "https://e.mail.ru/messages/drafts/";
     private final int WAIT_ELEMENT_VISIBILITY_SEC = 5;
     private static final Logger logger = LogManager.getRootLogger();
     private final int WAIT_SECONDS = 5;
     WebDriverWait wait;
+    @FindBy(xpath = "//a[@rel = 'history'][@class = 'js-href b-datalist__item__link']")
+    Collection<WebElement> collection;
 
-
-    @FindBy(xpath = "//div[@class = 'b-datalist__body']/div/div/a")
-    private WebElement drafts;
 
 
     public DraftsPage(WebDriver driver) {
@@ -35,21 +36,21 @@ public class DraftsPage extends AbstractPage {
         PageFactory.initElements(this.driver, this);
     }
 
-    @FindBy(xpath = "//*[@id='b-letters']/div[1]/div[8]/div/div[2]/div/div/a")
-    private List<WebElement> sentMessagesList;
-
-    @FindBy(xpath = "//div[@class = 'b-datalist__body']")
-    private WebElement list_of_elements;
 
     public WebElement findMailInDraft() {
+//        Collection<WebElement> collection = driver.findElements(By.xpath("//a[@rel = 'history'][@class = 'js-href b-datalist__item__link']"));
 
-        Collection<WebElement> collection = driver.findElements(By.xpath("//a[@rel = 'history'][@class = 'js-href b-datalist__item__link']"));
+        Collection<WebElement> collection =  getVisibleElements(driver.findElements(By.xpath("//a[contains(@href,'/drafts/') and @data-name='link']")),10);
+        WebElement mail = getVisibleElement(driver.findElement(By.xpath("//a[@rel = 'history'][@class = 'js-href b-datalist__item__link']")));
         Iterator<WebElement> iterator = collection.iterator();
         WebElement element = null;
         while (iterator.hasNext()) {
             element = iterator.next();
-            if (element.findElement(By.xpath("//div[@class = 'b-datalist__item__subj']")).getText().equalsIgnoreCase(MailSaverClass.getMailSubjectAndBody()) &&
-                    element.findElement(By.xpath("//div[@class = 'b-datalist__item__addr']")).getText().equalsIgnoreCase(MailSaverClass.getMailAddressee())) {
+            System.out.println(element.findElement(By.xpath("//div[@class = 'b-datalist__item__subj']")).getText());
+            System.out.println(element.findElement(By.xpath("//div[@class = 'b-datalist__item__addr']")).getText());
+
+            if (element.findElement(By.xpath("//div[@class = 'b-datalist__item__subj']")).getText().equals(MailSaverClass.getMailSubjectAndBody()) &&
+                    element.findElement(By.xpath("//div[@class = 'b-datalist__item__addr']")).getText().equals(MailSaverClass.getMailAddressee())) {
 
                 return element;
             }
@@ -59,16 +60,15 @@ public class DraftsPage extends AbstractPage {
 
     }
 
-    public DraftsPage clickOnReference() {
+    public CreateNewMailPage clickOnSavedMailInDrafts(WebElement element) {
         findMailInDraft().click();
-        return this;
+        return new CreateNewMailPage(driver);
     }
 
     public DraftsPage openPage() {
         driver.navigate().to("https://e.mail.ru/messages/drafts/");
         return this;
     }
-
 
 
 }

@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 import java.util.Collection;
 import java.util.Iterator;
 
-public class SentPage extends AbstractPage{
+public class SentPage extends LeftBarClass{
     private final String BASE_URL = "https://e.mail.ru/messages/sent/";
 
 

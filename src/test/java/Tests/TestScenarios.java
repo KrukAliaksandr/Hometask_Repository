@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 public class TestScenarios {
     protected Steps steps;
     protected String addressee;
-    private final String USERNAME = "webdrivertestak";
+    private final String USERNAME = "aliaksandrkrukwd@mail.ru";
     private final String PASSWORD = "12345aa";
 
     @BeforeClass(description = "Init browser and login")
@@ -19,52 +19,41 @@ public class TestScenarios {
         steps.loginIntoMailRu(USERNAME, PASSWORD);
     }
 
-    @Test
-    public void isLoggedIn() {
-        Assert.assertTrue(steps.checkForSuccessfulLogin());
-    }
+//    @Test
+//    public void isLoggedIn() {
+//        Assert.assertTrue(steps.checkForSuccessfulLogin());
+//    }
 
-    @Test
-    public void deleteFirstMessageInInboxFolder() {
-        steps.chooseFirstMailAndDeleteIt();
-        Assert.assertTrue(steps.isDeletedMailPresentInTrashFolder());
-    }
-
-
-    @Test
-    public void markFirstMessageInInboxFolderAsSpam() {
-        steps.chooseFirstMailAndMarkItAsSpam();
-        Assert.assertTrue(steps.isMailPresentInSpamFolder());
-    }
-
-
-    @Test
-    public void createMailAndPutItInDraftsFolder() {
-        steps.createNewMail();
-        steps.fillNewMailAndSaveAsDraft();
-        steps.openDraftsWithAcceptAlert();
-        Assert.assertTrue(steps.searchforDrafts());
-
-    }
+//    @Test
+//    public void createMailAndPutItInDraftsFolder() {
+//        steps.saveCreatedMailAndGoToDraftsPage();
+//        Assert.assertTrue(steps.isMailPresentInDrafts());
+//    }
 
     @Test
     public void checkSentMailInDraftsFolder() {
-        steps.createNewMail();
-        steps.fillNewMailAndSaveAsDraft();
-        steps.openDraftsWithAcceptAlert();
-        steps.sendMailFromDraft();
-        Assert.assertTrue(steps.searchforDrafts());
+        steps.saveCreatedMailAndSendItFromDraft();
+        Assert.assertFalse(steps.isMailPresentInDrafts());
     }
 
     @Test
     public void checkSentMailInSentFolder() {
-        steps.createNewMail();
-        steps.fillNewMailAndSaveAsDraft();
-        steps.openDraftsWithAcceptAlert();
-        steps.sendMailFromDraft();
-        Assert.assertTrue(steps.mailIsPresentInSentFolder());
+        steps.saveCreatedMailAndSendItFromDraft();
+        Assert.assertTrue(steps.isMailPresentInSent());
     }
 
+//    @Test
+//    public void deleteFirstMessageInInboxFolder() {
+//        steps.chooseFirstMailAndDeleteIt();
+//        Assert.assertTrue(steps.isDeletedMailPresentInTrashFolder());
+//    }
+//
+//
+//    @Test
+//    public void markFirstMessageInInboxFolderAsSpam() {
+//        steps.chooseFirstMailAndMarkItAsSpam();
+//        Assert.assertTrue(steps.isMailPresentInSpamFolder());
+//    }
 
 
 }

@@ -9,11 +9,11 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 
-public class CreateNewMailPage extends AbstractPage {
+public class CreateNewMailPage extends LeftBarClass {
 
     Actions actions = new Actions(driver);
     private  String BASE_URL = "https://mail.ru/compose";
-    private  String mailReciever = "webdrivertestak@mail.ru";
+    private  String mailReciever = "aliaksandrkrukwd@mail.ru";
     private  String mailTopic = "Test Message";
     private  String mailContent = "Test Content";
 
@@ -63,7 +63,6 @@ public class CreateNewMailPage extends AbstractPage {
     }
 
     public CreateNewMailPage fillNewMailMessageAndSaveToDraft(String mail, String topic_text, String text_msg) {
-
         addressee.sendKeys(mail);
         topic.sendKeys(topic_text);
         driver.switchTo().frame(iframeForTextField);
@@ -81,7 +80,6 @@ public class CreateNewMailPage extends AbstractPage {
 
     public CreateNewMailPage clickSendButton() {
         sendLink = new WebDriverWait(driver,10).until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@data-name = 'send']")));
-//        getClickableElement(sendLink);
         highlightElement(sendLink);
         unHighlightElement(sendLink);
         sendLink.click();
@@ -89,16 +87,11 @@ public class CreateNewMailPage extends AbstractPage {
 
     }
 
-    public CreateNewMailPage mailIsSentMessage() {
-        WebDriverWait wait = new WebDriverWait(driver, 10);
-        wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.className("message-sent__title"))));
-        return this;
-    }
-
-    public CreateNewMailPage acceptAlert() {
+    public DraftsPage moveToDraftsAndAcceptAlert() {
+        clickDraftsPage();
         Alert alert = driver.switchTo().alert();
         alert.accept();
-        return this;
+        return new DraftsPage(driver);
 
     }
 

@@ -7,7 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import java.util.List;
 
 
-    public class SpamPage extends AbstractPage {
+    public class SpamPage extends LeftBarClass {
 
         private final long WAIT_ELEMENT_VISIBILITY_SEC = 10;
         private final String BASE_URL = "https://e.mail.ru/messages/spam/";
