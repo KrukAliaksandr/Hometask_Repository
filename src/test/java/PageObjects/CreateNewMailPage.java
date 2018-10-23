@@ -12,10 +12,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class CreateNewMailPage extends LeftBarClass {
 
     Actions actions = new Actions(driver);
-    private  String BASE_URL = "https://mail.ru/compose";
-    private  String mailReciever = "aliaksandrkrukwd@mail.ru";
-    private  String mailTopic = "Test Message";
-    private  String mailContent = "Test Content";
+    private String BASE_URL = "https://mail.ru/compose";
+    private String mailReciever = "aliaksandrkrukwd@mail.ru";
+    private String mailTopic = "Test Message";
+    private String mailContent = "Test Content";
 
 
     @FindBy(xpath = "//div[contains(@class,'compose-head__row-wrapper compose-head__row-wrapper_to js-row')]//textarea[@class='js-input compose__labels__input']")
@@ -27,11 +27,8 @@ public class CreateNewMailPage extends LeftBarClass {
     @FindBy(css = "#tinymce")
     WebElement textArea;
 
-    @FindBy(xpath = "//div[@id='b-toolbar__right']//div//div[contains(@class,'b-toolbar')]//div[contains(@class,'b-toolbar__group')]//div[contains(@class,'b-toolbar__item')]//div//div[contains(@title,'Сохранить (Ctrl+S)')]//span[contains(@class,'b-toolbar__btn__text')][contains(text(),'Сохранить')]")
+    @FindBy(xpath = "//div[@data-name='saveDraft']/span")
     WebElement buttonSaveLetter;
-
-    @FindBy(xpath = "//span[contains(text(),'Черновики')]")
-    WebElement draftLink;
 
     @FindBy(xpath = "//div[@data-name = 'send']")
     WebElement sendLink;
@@ -49,6 +46,9 @@ public class CreateNewMailPage extends LeftBarClass {
 
     @FindBy(xpath = "//body[@id = 'tinymce']")
     private WebElement bodyForTextField;
+
+    @FindBy(xpath = ".//div[@class = 'classmessage-sent__title']")
+    private WebElement mailIsSentMessage;
 
 
     public CreateNewMailPage openPage() {
@@ -69,9 +69,10 @@ public class CreateNewMailPage extends LeftBarClass {
         bodyForTextField.clear();
         bodyForTextField.sendKeys(text_msg);
         driver.switchTo().defaultContent();
-        highlightElement(sendLink);
+        highlightElement(buttonSaveLetter);
         buttonSaveLetter.click();
-        unHighlightElement(sendLink);
+        waitForAjaxProcessed();
+        unHighlightElement(buttonSaveLetter);
         MailSaverClass.getMailBuffer();
         MailSaverClass.saveMailInBuffer(topic_text + text_msg, mail);
         return this;
@@ -79,18 +80,19 @@ public class CreateNewMailPage extends LeftBarClass {
 
 
     public CreateNewMailPage clickSendButton() {
-        sendLink = new WebDriverWait(driver,10).until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@data-name = 'send']")));
+        sendLink = new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@data-name = 'send']")));
         highlightElement(sendLink);
         unHighlightElement(sendLink);
         sendLink.click();
+        waitForAjaxProcessed();
         return this;
 
     }
 
     public DraftsPage moveToDraftsAndAcceptAlert() {
         clickDraftsPage();
-        Alert alert = driver.switchTo().alert();
-        alert.accept();
+//        Alert alert = driver.switchTo().alert();
+//        alert.accept();
         return new DraftsPage(driver);
 
     }

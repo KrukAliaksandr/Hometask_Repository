@@ -1,5 +1,6 @@
 package PageObjects;
 
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -45,8 +46,14 @@ public class LeftBarClass extends AbstractPage{
     }
 
     public DraftsPage clickDraftsPage(){
-        draftMessagesButton.click();
-        return new DraftsPage(driver);
+        while(true){
+            try{
+                draftMessagesButton.click();
+                return new DraftsPage(driver);
+            }catch(StaleElementReferenceException ex){}
+
+        }
+
     }
 
     public SentPage clickSentPage() {

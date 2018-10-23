@@ -3,10 +3,7 @@ package PageObjects;
 import AdditionalClasses.MailSaverClass;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.By;
-import org.openqa.selenium.StaleElementReferenceException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -40,23 +37,30 @@ public class DraftsPage extends LeftBarClass {
     public WebElement findMailInDraft() {
 //        Collection<WebElement> collection = driver.findElements(By.xpath("//a[@rel = 'history'][@class = 'js-href b-datalist__item__link']"));
 
-        Collection<WebElement> collection =  getVisibleElements(driver.findElements(By.xpath("//a[contains(@href,'/drafts/') and @data-name='link']")),10);
-        WebElement mail = getVisibleElement(driver.findElement(By.xpath("//a[@rel = 'history'][@class = 'js-href b-datalist__item__link']")));
-        Iterator<WebElement> iterator = collection.iterator();
-        WebElement element = null;
-        while (iterator.hasNext()) {
-            element = iterator.next();
-            System.out.println(element.findElement(By.xpath("//div[@class = 'b-datalist__item__subj']")).getText());
-            System.out.println(element.findElement(By.xpath("//div[@class = 'b-datalist__item__addr']")).getText());
+        while (true){
+            try{
+                Collection<WebElement> collection =  getVisibleElements(driver.findElements(By.xpath("//a[contains(@href,'/drafts/') and @data-name='link']")),10);
+                WebElement mail = getVisibleElement(driver.findElement(By.xpath("//a[@rel = 'history'][@class = 'js-href b-datalist__item__link']")));
+                Iterator<WebElement> iterator = collection.iterator();
+                WebElement element = null;
+                while (iterator.hasNext()) {
+                    element = iterator.next();
+                    System.out.println(element.findElement(By.xpath("//div[@class = 'b-datalist__item__subj']")).getText());
+                    System.out.println(element.findElement(By.xpath("//div[@class = 'b-datalist__item__addr']")).getText());
 
-            if (element.findElement(By.xpath("//div[@class = 'b-datalist__item__subj']")).getText().equals(MailSaverClass.getMailSubjectAndBody()) &&
-                    element.findElement(By.xpath("//div[@class = 'b-datalist__item__addr']")).getText().equals(MailSaverClass.getMailAddressee())) {
+                    if (element.findElement(By.xpath(".//div[@class = 'b-datalist__item__subj']")).getText().equals(MailSaverClass.getMailSubjectAndBody()) &&
+                            element.findElement(By.xpath(".//div[@class = 'b-datalist__item__addr']")).getText().equals(MailSaverClass.getMailAddressee())) {
 
-                return element;
+                        return element;
+                    }
+
+                }
+                return null;
+            } catch (StaleElementReferenceException ex) {
+            } catch (TimeoutException te) {
+                return null;
             }
-
         }
-        return null;
 
     }
 

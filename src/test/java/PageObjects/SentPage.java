@@ -1,13 +1,15 @@
 package PageObjects;
+
 import AdditionalClasses.MailSaverClass;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import okio.Timeout;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.PageFactory;
+
+import java.sql.Time;
 import java.util.Collection;
 import java.util.Iterator;
 
-public class SentPage extends LeftBarClass{
+public class SentPage extends LeftBarClass {
     private final String BASE_URL = "https://e.mail.ru/messages/sent/";
 
 
@@ -18,20 +20,26 @@ public class SentPage extends LeftBarClass{
 
     public WebElement findMailInSent() {
 
-        Collection<WebElement> collection = driver.findElements(By.xpath("//a[@rel = 'history'][@class = 'js-href b-datalist__item__link']"));
-        Iterator<WebElement> iterator = collection.iterator();
-        WebElement element = null;
-        while (iterator.hasNext()) {
-            element = iterator.next();
-            if (element.findElement(By.xpath("//div[@class = 'b-datalist__item__subj']")).getText().substring(1).equals(MailSaverClass.getMailSubjectAndBody()) &&
-                    element.findElement(By.xpath("//div[@class = 'b-datalist__item__addr']")).getText().equals(MailSaverClass.getMailAddressee())) {
+        while (true) {
+            try {
+                Collection<WebElement> collection = driver.findElements(By.xpath(".//div[@class='b-datalist__item__info']"));
+                Iterator<WebElement> iterator = collection.iterator();
+                WebElement element = null;
+                while (iterator.hasNext()) {
+                    element = iterator.next();
+                    if (element.findElement(By.xpath("//div[@class = 'b-datalist__item__subj']")).getText().substring(1).equals(MailSaverClass.getMailSubjectAndBody()) &&
+                            element.findElement(By.xpath("//div[@class = 'b-datalist__item__addr']")).getText().equals(MailSaverClass.getMailAddressee())) {
 
-                return element;
+                        return element;
+                    }
+
+                }
+                return null;
+            } catch (StaleElementReferenceException ex) {
+            } catch (TimeoutException te) {
+                return null;
             }
-
         }
-        return null;
-
     }
 
     public SentPage openPage() {
