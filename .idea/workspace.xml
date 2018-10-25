@@ -2,48 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c1ef620-08c8-4d4b-a90c-eea7d275dc3f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/buisnessObjects/Mail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/buisnessObjects/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/driverManageer/RemoteDriver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/exceptions/MaiEx.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/mail_config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_5_6.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebDriverTask.iml" beforeDir="false" afterPath="$PROJECT_DIR$/WebDriverTask.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mail_config.poperties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AdditionalClasses/MailSaverClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/additionalClasses/MailSaverClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AdditionalClasses/Screenshoter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/additionalClasses/Screenshoter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/AbstractPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjects/AbstractPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/AcccountLoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjects/AcccountLoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/CreateNewMailPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjects/CreateNewMailPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/DraftsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjects/DraftsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/InboxPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjects/InboxPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/LeftBarClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjects/LeftBarClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/SentPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjects/SentPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/SpamPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjects/SpamPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/TrashPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjects/TrashPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/UserMailPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjects/UserMailPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Singleton/DriverSingleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/driverManageer/DriverSingleton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Steps/Steps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/Steps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestGen/TextGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testGen/TextGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/TestScenarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/TestScenarios.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/AdditionalClasses/MailSaverClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/AdditionalClasses/MailSaverClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/AdditionalClasses/Screenshoter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/AdditionalClasses/Screenshoter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/AbstractPage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/AbstractPage$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/AbstractPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/AbstractPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/AcccountLoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/AcccountLoginPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/CreateNewMailPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/CreateNewMailPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/DraftsPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/DraftsPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/InboxPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/InboxPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/LeftBarClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/LeftBarClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/SentPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/SentPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/SpamPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/SpamPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/TrashPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/TrashPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/UserMailPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/UserMailPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Singleton/DriverSingleton.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Steps/Steps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Steps/Steps.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/TestGen/TextGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestGen/TextGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Tests/TestScenarios.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Tests/TestScenarios.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,7 +17,7 @@
     <session id="410583306">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.45" value="1" />
           <entry key="project.opened" value="2" />
@@ -111,7 +72,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/pageObjects/CreateNewMailPage.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
-              <caret line="24" column="21" lean-forward="true" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+              <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -371,7 +332,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540481670843" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540481954172" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -493,7 +454,7 @@
       <option name="presentableId" value="Default" />
       <updated>1540281509689</updated>
       <workItem from="1540281520652" duration="6711000" />
-      <workItem from="1540465628940" duration="15240000" />
+      <workItem from="1540465628940" duration="15399000" />
     </task>
     <servers />
   </component>
@@ -530,11 +491,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21951000" />
+    <option name="totallyTimeSpent" value="22110000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12652811" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -546,7 +506,7 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.72860634" visible="true" weight="0.3295964" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.72860634" weight="0.3295964" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -733,7 +693,7 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/pageObjects/CreateNewMailPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="24" column="21" lean-forward="true" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -780,5 +740,80 @@
         </state>
       </provider>
     </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>log4j</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: backport-util-concurrent:backport-util-concurrent:3.1</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
