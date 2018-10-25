@@ -1,6 +1,6 @@
-package PageObjects;
+package pageObjects;
 
-import AdditionalClasses.MailSaverClass;
+import additionalClasses.MailSaverClass;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

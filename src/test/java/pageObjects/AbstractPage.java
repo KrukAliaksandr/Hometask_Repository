@@ -1,8 +1,7 @@
-package PageObjects;
+package pageObjects;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -18,7 +17,7 @@ import static sun.plugin2.message.HeartbeatMessage.DEFAULT_TIMEOUT;
 
 public abstract class AbstractPage {
 
-    private static final long WAIT_SECONDS = 40;
+    private static final long WAIT_SECONDS = 10;
 
     protected WebDriver driver;
     protected final Logger logger = LogManager.getRootLogger();

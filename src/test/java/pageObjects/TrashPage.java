@@ -1,6 +1,6 @@
-package PageObjects;
+package pageObjects;
 
-import AdditionalClasses.MailSaverClass;
+import additionalClasses.MailSaverClass;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -21,7 +21,7 @@ import java.util.List;
             super(driver);
         }
 
-        public int checkForDeletedMessage(String expectedSubjectAndBody) {
+        public int checkForDeletedMessage() {
             getVisibleElements(deletedMessagesList, WAIT_ELEMENT_VISIBILITY_SEC);
             System.out.println( deletedMessagesList.size());
             for (int i = 0; i < deletedMessagesList.size(); i++) {

@@ -1,4 +1,4 @@
-package TestGen;
+package testGen;
 
 import java.util.Random;
 

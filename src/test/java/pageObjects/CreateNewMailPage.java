@@ -1,6 +1,6 @@
-package PageObjects;
+package pageObjects;
 
-import AdditionalClasses.MailSaverClass;
+import additionalClasses.MailSaverClass;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
@@ -33,9 +33,7 @@ public class CreateNewMailPage extends LeftBarClass {
     @FindBy(xpath = "//div[@data-name = 'send']")
     WebElement sendLink;
 
-    WebElement text_area;
-
-    @FindBy(xpath = "//div[@id='b-toolbar__right']//div//div[contains(@class,'b-toolbar')]//div[contains(@class,'b-toolbar__group')]//div[contains(@class,'b-toolbar__item')]//div//div[contains(@title,'Сохранить (Ctrl+S)')]//span[contains(@class,'b-toolbar__btn__text')][contains(text(),'Сохранить')]")
+    @FindBy(xpath = "//div[@data-name='saveDraft']/span")
     WebElement button_save_letter;
 
     @FindBy(xpath = "//span[contains(text(),'Черновики')]")
@@ -62,19 +60,19 @@ public class CreateNewMailPage extends LeftBarClass {
 
     }
 
-    public CreateNewMailPage fillNewMailMessageAndSaveToDraft(String mail, String topic_text, String text_msg) {
-        addressee.sendKeys(mail);
-        topic.sendKeys(topic_text);
+    public CreateNewMailPage fillNewMailMessageAndSaveToDraft(String mailAddressee,String mailTopic,String mailContent) {
+        addressee.sendKeys(mailAddressee);
+        topic.sendKeys(mailTopic);
         driver.switchTo().frame(iframeForTextField);
         bodyForTextField.clear();
-        bodyForTextField.sendKeys(text_msg);
+        bodyForTextField.sendKeys(mailContent);
         driver.switchTo().defaultContent();
         highlightElement(buttonSaveLetter);
         buttonSaveLetter.click();
         waitForAjaxProcessed();
         unHighlightElement(buttonSaveLetter);
         MailSaverClass.getMailBuffer();
-        MailSaverClass.saveMailInBuffer(topic_text + text_msg, mail);
+        MailSaverClass.saveMailInBuffer(mailTopic + mailContent,mailAddressee);
         return this;
     }
 

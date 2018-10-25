@@ -1,6 +1,6 @@
-package AdditionalClasses;
+package additionalClasses;
 
-import Singleton.DriverSingleton;
+import driverManageer.DriverSingleton;
 import org.apache.maven.surefire.shade.org.apache.maven.shared.utils.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;

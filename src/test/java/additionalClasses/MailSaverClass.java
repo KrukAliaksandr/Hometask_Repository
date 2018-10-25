@@ -1,4 +1,4 @@
-package AdditionalClasses;
+package additionalClasses;
 
 
 import java.util.HashMap;

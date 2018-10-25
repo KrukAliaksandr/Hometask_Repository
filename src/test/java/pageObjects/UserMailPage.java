@@ -1,4 +1,4 @@
-package PageObjects;
+package pageObjects;
 
 import org.openqa.selenium.WebDriver;
 
@@ -11,8 +11,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class UserMailPage extends LeftBarClass {
     private final String BASE_URL = "https://e.mail.ru/messages";
-    private final String USERNAME = "aliaksandrkrukwd@mail.ru";
-    private final String PASSWORD = "12345aa";
     private final int WAIT_SECONDS = 40;
     private  WebDriverWait wait;
 
@@ -66,12 +64,5 @@ public class UserMailPage extends LeftBarClass {
         return BASE_URL;
     }
 
-    public String getUSERNAME() {
-        return USERNAME;
-    }
-
-    public String getPASSWORD() {
-        return PASSWORD;
-    }
 }
 
