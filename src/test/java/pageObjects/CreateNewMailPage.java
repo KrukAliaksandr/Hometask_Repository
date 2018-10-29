@@ -13,10 +13,6 @@ public class CreateNewMailPage extends LeftBarClass {
 
     Actions actions = new Actions(driver);
     private String BASE_URL = "https://mail.ru/compose";
-    private String mailReciever = "aliaksandrkrukwd@mail.ru";
-    private String mailTopic = "Test Message";
-    private String mailContent = "Test Content";
-
 
     @FindBy(xpath = "//div[contains(@class,'compose-head__row-wrapper compose-head__row-wrapper_to js-row')]//textarea[@class='js-input compose__labels__input']")
     WebElement addressee;
@@ -36,17 +32,12 @@ public class CreateNewMailPage extends LeftBarClass {
     @FindBy(xpath = "//div[@data-name='saveDraft']/span")
     WebElement button_save_letter;
 
-    @FindBy(xpath = "//span[contains(text(),'Черновики')]")
-    WebElement draft_link;
-
     @FindBy(tagName = "iframe")
     private WebElement iframeForTextField;
 
     @FindBy(xpath = "//body[@id = 'tinymce']")
     private WebElement bodyForTextField;
 
-    @FindBy(xpath = ".//div[@class = 'classmessage-sent__title']")
-    private WebElement mailIsSentMessage;
 
 
     public CreateNewMailPage openPage() {
@@ -67,10 +58,7 @@ public class CreateNewMailPage extends LeftBarClass {
         bodyForTextField.clear();
         bodyForTextField.sendKeys(mailContent);
         driver.switchTo().defaultContent();
-        highlightElement(buttonSaveLetter);
-        buttonSaveLetter.click();
         waitForAjaxProcessed();
-        unHighlightElement(buttonSaveLetter);
         MailSaverClass.getMailBuffer();
         MailSaverClass.saveMailInBuffer(mailTopic + mailContent,mailAddressee);
         return this;
@@ -89,21 +77,7 @@ public class CreateNewMailPage extends LeftBarClass {
 
     public DraftsPage moveToDraftsAndAcceptAlert() {
         clickDraftsPage();
-//        Alert alert = driver.switchTo().alert();
-//        alert.accept();
         return new DraftsPage(driver);
 
-    }
-
-    public String getMailReciever() {
-        return mailReciever;
-    }
-
-    public String getMailTopic() {
-        return mailTopic;
-    }
-
-    public String getMailContent() {
-        return mailContent;
     }
 }

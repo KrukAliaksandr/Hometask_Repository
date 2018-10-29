@@ -1,9 +1,13 @@
 package pageObjects;
 import additionalClasses.MailSaverClass;
 import org.openqa.selenium.By;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+
+import java.util.Collection;
+import java.util.Iterator;
 import java.util.List;
 
 
@@ -19,17 +23,28 @@ import java.util.List;
             super(driver);
         }
 
-        public int getMsgIndexInListMarkedAsSpam() {
-            getVisibleElements(spamMessagesList, WAIT_ELEMENT_VISIBILITY_SEC);
-            System.out.println( spamMessagesList.size());
-            for (int i = 0; i < spamMessagesList.size(); i++) {
-                if (spamMessagesList.get(i).findElement(By.xpath("//div[@class = 'b-datalist__item__subj']")).getText().equals((MailSaverClass.getMailSubjectAndBody())) &&
-                        spamMessagesList.get(i).findElement(By.xpath("//div[@class = 'b-datalist__item__addr']")).getText().equals((MailSaverClass.getMailAddressee())))
-                {
-                    return i;
+        public WebElement findMailInSpam() {
+            try {
+                driver.navigate().refresh();
+                Collection<WebElement> collection = getVisibleElements(driver.findElements(By.xpath("//a[contains(@href,'/thread/') and @data-name='link']")), 10);
+                Iterator<WebElement> iterator = collection.iterator();
+                WebElement element = null;
+                while (iterator.hasNext()) {
+                    element = iterator.next();
+                    System.out.println(element.findElement(By.xpath("//div[@class = 'b-datalist__item__subj']")).getText());
+                    System.out.println(element.findElement(By.xpath("//div[@class = 'b-datalist__item__addr']")).getText());
+                    if (element.findElement(By.xpath(".//div[@class = 'b-datalist__item__subj']")).getText().equals(MailSaverClass.getMailSubjectAndBody()) &&
+                            element.findElement(By.xpath(".//div[@class = 'b-datalist__item__addr']")).getText().equals(MailSaverClass.getMailAddressee())) {
+
+                        return element;
+                    }
+
                 }
+                return null;
+
+            } catch (TimeoutException te) {
+                return null;
             }
-            return -1;
         }
 
         public SpamPage openPage() {

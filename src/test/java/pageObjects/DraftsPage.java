@@ -34,7 +34,6 @@ public class DraftsPage extends LeftBarClass {
 
 
     public WebElement findMailInDraft() {
-
         try {
             Collection<WebElement> collection = getVisibleElements(driver.findElements(By.xpath("//a[contains(@href,'/drafts/') and @data-name='link']")), 10);
             Iterator<WebElement> iterator = collection.iterator();
@@ -51,7 +50,6 @@ public class DraftsPage extends LeftBarClass {
 
             }
             return null;
-
 
         } catch (TimeoutException te) {
             return null;

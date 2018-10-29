@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class LeftBarClass extends AbstractPage{
     private String BASE_URL = "https://e.mail.ru/messages";
@@ -27,7 +28,12 @@ public class LeftBarClass extends AbstractPage{
     @FindBy(xpath = "//div[@data-id='500002']")
     private WebElement deletedMessagesButton;
 
+    @FindBy(xpath = "//*[@id='PH_user-email']")
+    private WebElement accountCurrentEmail;
 
+    public WebElement getAccountCurrentEmail() {
+        return getVisibleElement(accountCurrentEmail);
+    }
 
     public LeftBarClass  openPage()
     {

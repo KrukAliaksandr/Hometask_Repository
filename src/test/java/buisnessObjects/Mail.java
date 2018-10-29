@@ -17,7 +17,7 @@ public class Mail {
     public static Mail getMail() {
         if (mail == null) {
             mail = new Mail();
-            rb = ResourceBundle.getBundle("mail_config");
+            rb = ResourceBundle.getBundle("configurationFiles/mail_config");
             mailAddressee = rb.getString("mail.login") + "@" + rb.getString("mail.domain");
             mailTopic = rb.getString("mail.topic");
             mailContent = setMailContent();

@@ -7,20 +7,22 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import java.util.ResourceBundle;
 
 public class TestScenarios {
+    ResourceBundle rb;
     protected Steps steps;
-
 
     @BeforeClass(description = "Init browser and login")
     public void setUp() {
-        steps = new Steps();
+        rb  = ResourceBundle.getBundle("configurationFiles/driver_config");
+        steps = new Steps(rb.getString("driver.chrome"));
         steps.loginIntoMailRu(User.getUser());
     }
 
     @Test
     public void isLoggedIn() {
-        Assert.assertEquals(steps.checkForSuccessfulLogin(),User.getMailLogin());
+        Assert.assertEquals(steps.checkForSuccessfulLogin(),User.getUserMailAddress());
     }
 
     @Test
@@ -40,19 +42,16 @@ public class TestScenarios {
         steps.saveCreatedMailAndSendItFromDraft(Mail.getMail());
         Assert.assertTrue(steps.isMailPresentInSent());
     }
-
-    @Test
-    public void deleteFirstMessageInInboxFolder() {
-        steps.chooseFirstMailAndDeleteIt();
-        Assert.assertTrue(steps.isDeletedMailPresentInTrashFolder());
-    }
-
-
-    @Test
-    public void markFirstMessageInInboxFolderAsSpam() {
-        steps.chooseFirstMailAndMarkItAsSpam();
-        Assert.assertTrue(steps.isMailPresentInSpamFolder());
-    }
-
+//    @Test
+//    public void deleteFirstMessageInInboxFolder() {
+//        steps.chooseFirstInboxMailAndDeleteIt();
+//        Assert.assertTrue(steps.isDeletedMailPresentInTrashFolder());
+//    }
+//
+//    @Test
+//    public void markFirstMessageInInboxFolderAsSpam() {
+//        steps.chooseFirstInboxMailAndMarkItAsSpam();
+//        Assert.assertTrue(steps.isMailPresentInSpamFolder());
+//    }
 
 }

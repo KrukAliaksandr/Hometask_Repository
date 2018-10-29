@@ -50,8 +50,6 @@ import java.util.List;
         }
 
         public InboxPage readFirstMsgSubjectAndBody() {
-            this.openPage();
-            getVisibleElements(inboxMessagesList, WAIT_ELEMENT_VISIBILITY_SEC);
             highlightElement(firstMailOnPage);
             String mailSubjAndBody = firstMailOnPage.findElement(By.xpath("//div[@class = 'b-datalist__item__subj']")).getText().substring(1);
             String mailAddressee = firstMailOnPage.findElement(By.xpath("//div[@class = 'b-datalist__item__addr']")).getText();
@@ -73,10 +71,10 @@ import java.util.List;
             return this;
         }
 
-        public InboxPage clickOnDeleteMailBtn(){
-            deleteMsgBtn.click();
-            return this;
-        }
+//        public InboxPage clickOnDeleteMailBtn(){
+//            deleteMsgBtn.click();
+//            return this;
+//        }
 
         public InboxPage clickOnSpamBtn(){
             spamBtn.click();
@@ -84,32 +82,32 @@ import java.util.List;
             return this;
         }
 
-        public InboxPage clickSelectAllMsgsCheckBox(){
-            selectAllCheckBox.click();
-            return this;
-        }
+//        public InboxPage clickSelectAllMsgsCheckBox(){
+//            selectAllCheckBox.click();
+//            return this;
+//        }
 
-        public boolean isAllCheckBoxSelected(){
-            for (WebElement element : mailCheckBoxList){
-                if (!element.isSelected()){
-                    logger.info("There is at least one checkbox has not been selected");
-                    return false;
-                }
-            }
-            logger.info("All checkboxes have been selected");
-            return true;
-        }
+//        public boolean isAllCheckBoxSelected(){
+//            for (WebElement element : mailCheckBoxList){
+//                if (!element.isSelected()){
+//                    logger.info("There is at least one checkbox has not been selected");
+//                    return false;
+//                }
+//            }
+//            logger.info("All checkboxes have been selected");
+//            return true;
+//        }
 
-        public String getLoggedInUserName(){
-            return getVisibleElement(actualUserName).getText();
-        }
+//        public String getLoggedInUserName(){
+//            return getVisibleElement(actualUserName).getText();
+//        }
 
-        public String getFirstMsgSubjectAndBody() {
-            if (firstMsgSubjectAndBody == null || firstMsgSubjectAndBody.trim().isEmpty()){
-                this.readFirstMsgSubjectAndBody();
-            }
-            return firstMsgSubjectAndBody;
-        }
+//        public String getFirstMsgSubjectAndBody() {
+//            if (firstMsgSubjectAndBody == null || firstMsgSubjectAndBody.trim().isEmpty()){
+//                this.readFirstMsgSubjectAndBody();
+//            }
+//            return firstMsgSubjectAndBody;
+//        }
         public InboxPage deleteFirstMailUsingActions(){
             getVisibleElements(inboxMessagesList, WAIT_ELEMENT_VISIBILITY_SEC);
             new Actions(driver).dragAndDrop(inboxMessagesList.get(0),getDeletedMessagesButton()).build().perform();

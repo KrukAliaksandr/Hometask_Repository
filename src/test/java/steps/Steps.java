@@ -2,11 +2,13 @@ package steps;
 
 import buisnessObjects.Mail;
 import buisnessObjects.User;
+import driverManageer.RemoteDriverCreator;
+import driverManageer.WebDriverDecorator;
+import org.openqa.selenium.WebDriverException;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import pageObjects.*;
-import driverManageer.DriverSingleton;
+import driverManageer.ChromeDriverCreator;
 import org.openqa.selenium.WebDriver;
-
-import java.util.concurrent.TimeUnit;
 
 public class Steps {
     private static final int IMPLICIT_DELAY = 10;
@@ -17,20 +19,24 @@ public class Steps {
     private InboxPage inboxPage;
     private TrashPage trashPage;
 
-    public Steps() {
-        driver = DriverSingleton.getDriver();
-    }
+    public Steps(String selectedDriver) throws WebDriverException {
+        switch (selectedDriver) {
+            case "Chrome":
+                driver = new ChromeDriverCreator().getWebDriver();
+                break;
+            case "Remote":
+                driver = new RemoteDriverCreator().getWebDriver();
+                break;
+            default:
+                driver = new ChromeDriverCreator().getWebDriver();
+                break;
+        }
 
-
-    public void initBrowser() {
-        driver = DriverSingleton.getDriver();
-        driver.manage().timeouts().implicitlyWait(
-                IMPLICIT_DELAY, TimeUnit.SECONDS);
     }
 
     public String checkForSuccessfulLogin() {
-        UserMailPage userMailPage = new UserMailPage(driver);
-        return (userMailPage.returnAccountEmail(userMailPage.getAccountCurrentEmail()));
+        LeftBarClass leftBarClass = new LeftBarClass(driver);
+        return (leftBarClass.getAccountCurrentEmail()).getText();
     }
 
     public boolean isMailPresentInDrafts() {
@@ -46,7 +52,7 @@ public class Steps {
         draftsPage.openPage().clickOnSavedMailInDrafts(draftsPage.findMailInDraft()).clickSendButton();
     }
 
-    public void chooseFirstMailAndDeleteIt() {
+    public void chooseFirstInboxMailAndDeleteIt() {
         InboxPage inboxPage = new InboxPage(driver);
         inboxPage.readFirstMsgSubjectAndBody().deleteFirstMailUsingActions();
     }
@@ -70,7 +76,7 @@ public class Steps {
         return  leftBarClass.clickSentPage().findMailInSent()!= null;
     }
 
-    public void chooseFirstMailAndMarkItAsSpam() {
+    public void chooseFirstInboxMailAndMarkItAsSpam() {
         inboxPage = new InboxPage(driver);
         inboxPage.readFirstMsgSubjectAndBody()
                 .clickOnCheckboxWithId(0)
@@ -81,7 +87,7 @@ public class Steps {
     public boolean isMailPresentInSpamFolder() {
         SpamPage spamPage = new SpamPage(driver);
         spamPage.openPage();
-        return spamPage.getMsgIndexInListMarkedAsSpam() >= 0;
+        return spamPage.findMailInSpam() != null;
     }
 
     public boolean isDeletedMailPresentInTrashFolder() {
@@ -95,7 +101,8 @@ public class Steps {
 //    }
 
     public void closeDriver() {
-        DriverSingleton.closeDriver();
+        driver.close();
+        driver = null;
     }
 
 }

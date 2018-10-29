@@ -12,8 +12,7 @@ import java.util.List;
 
         private final long WAIT_ELEMENT_VISIBILITY_SEC = 10;
         private final String BASE_URL = "https://e.mail.ru/messages/trash";
-        @FindBy(xpath = "//*[@id='b-letters']/div[1]/div[5]/div/div[2]/div")
-        private List<WebElement> deleteMessagesList;
+
         @FindBy(xpath = "//*[@class='b-datalist__item__info']")
         private List<WebElement> deletedMessagesList;
 

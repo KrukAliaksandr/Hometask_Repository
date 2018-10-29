@@ -16,17 +16,19 @@ public class MailSaverClass {
     }
 
     public static String getMailSubjectAndBody() {
-            return mailBuffer.get("SubjectAndBody");
+        return mailBuffer.get("SubjectAndBody");
     }
+
     public static String getMailAddressee() {
         return mailBuffer.get("Addressee");
     }
 
     public static void saveMailInBuffer(String subjectAndBody, String addressee) {
-        mailBuffer.put("SubjectAndBody",subjectAndBody);
-        mailBuffer.put("Addressee",addressee);
+        mailBuffer.put("SubjectAndBody", subjectAndBody);
+        mailBuffer.put("Addressee", addressee);
     }
-    public static void clearBuffer(){
+
+    public static void clearBuffer() {
         mailBuffer.remove("Addressee");
         mailBuffer.remove("SubjectAndBody");
     }

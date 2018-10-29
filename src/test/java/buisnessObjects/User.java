@@ -6,6 +6,7 @@ public class User {
 
     private static ResourceBundle rb;
     private static String userLogin;
+    private static String userMailAddress;
     private static String userPassword;
     private static User user;
 
@@ -23,8 +24,9 @@ public class User {
     public static User getUser() {
         if (user == null) {
             user = new User();
-            rb = ResourceBundle.getBundle("mail_config");
-            userLogin = rb.getString("mail.login") + "@" + rb.getString("mail.domain");
+            rb = ResourceBundle.getBundle("configurationFiles/mail_config");
+            userMailAddress = rb.getString("mail.login") + "@" + rb.getString("mail.domain");
+            userLogin = rb.getString("mail.login");
             userPassword = rb.getString("mail.password");
         }
         return user;
@@ -46,4 +48,7 @@ public class User {
         return "User{}";
     }
 
+    public static String getUserMailAddress() {
+        return userMailAddress;
+    }
 }
