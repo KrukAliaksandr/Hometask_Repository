@@ -5,44 +5,59 @@ import java.time.LocalDateTime;
 import java.util.ResourceBundle;
 
 public class Mail {
-    private static String mailAddressee;
-    private static String mailTopic;
-    private static String mailContent;
-    private static Mail mail;
-    private static ResourceBundle rb;
+    private String mailAddressee;
+    private String mailTopicAndContent;
+    private ResourceBundle rb;
 
-    private Mail() {
+    public Mail(String mailAddressee,String mailTopicAndContent) {
+        this.mailAddressee = mailAddressee;
+        this.mailTopicAndContent = mailTopicAndContent;
     }
 
-    public static Mail getMail() {
-        if (mail == null) {
-            mail = new Mail();
-            rb = ResourceBundle.getBundle("configurationFiles/mail_config");
-            mailAddressee = rb.getString("mail.login") + "@" + rb.getString("mail.domain");
-            mailTopic = rb.getString("mail.topic");
-            mailContent = setMailContent();
-        }
-        return mail;
+    public Mail(){
+        this.mailAddressee = generateSelfAddressForMail();
+        this.mailTopicAndContent= generateTopicAndContent();
     }
 
-    public static String setMailContent() {
+//    public static Mail getMail() {
+//        if (mail == null) {
+//            mail = new Mail();
+//            rb = ResourceBundle.getBundle("configurationFiles/mail_config");
+//            mailAddressee = rb.getString("mail.login") + "@" + rb.getString("mail.domain");
+//            mailTopic = rb.getString("mail.topic");
+//            mailContent = setMailContent();
+//        }
+//        return mail;
+//    }
+
+    private String generateTopicAndContent() {
+        rb = ResourceBundle.getBundle("configurationFiles/mail_config");
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
-        mailContent = LocalDateTime.now().toString();
-        return mailContent;
+        return rb.getString("mail.topic")+LocalDateTime.now().toString();
     }
 
-    public static String getMailContent() {
-
-        return mailContent;
+    private String generateSelfAddressForMail() {
+        rb = ResourceBundle.getBundle("configurationFiles/mail_config");
+        return  rb.getString("mail.login") + "@" + rb.getString("mail.domain");
     }
 
-    public static String getMailAddressee() {
-        return mailAddressee;
+    public  void setMailAddressee(String mailAddressee) {
+        this.mailAddressee = mailAddressee;
     }
 
-    public static String getMailTopic() {
-        return mailTopic;
+    public  void setMailTopicAndContent(String mailTopicAndContent) {
+        this.mailTopicAndContent = mailTopicAndContent;
     }
+
+    public String getMailTopicAndContent() {
+
+        return this.mailTopicAndContent;
+    }
+
+    public  String getMailAddressee() {
+        return this.mailAddressee;
+    }
+
 
     @Override
     public int hashCode() {
@@ -54,8 +69,5 @@ public class Mail {
         return super.equals(obj);
     }
 
-    @Override
-    public String toString() {
-        return super.toString();
-    }
+
 }

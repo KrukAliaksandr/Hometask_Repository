@@ -28,30 +28,30 @@ public class TestScenarios {
     @Test
     public void createMailAndPutItInDraftsFolder() {
         steps.saveCreatedMailAndGoToDraftsPage();
-        Assert.assertTrue(steps.isMailPresentInDrafts());
+        Assert.assertEquals(steps.isMailPresentInDrafts().size(), 1);
     }
 
     @Test
     public void checkSentMailInDraftsFolder() {
-        steps.saveCreatedMailAndSendItFromDraft(Mail.getMail());
-        Assert.assertFalse(steps.isMailPresentInDrafts());
+        steps.saveCreatedMailAndSendItFromDraft(new Mail());
+        Assert.assertTrue( steps.isMailPresentInDrafts().isEmpty());
     }
 
     @Test
     public void checkSentMailInSentFolder() {
-        steps.saveCreatedMailAndSendItFromDraft(Mail.getMail());
-        Assert.assertTrue(steps.isMailPresentInSent());
+        steps.saveCreatedMailAndSendItFromDraft(new Mail());
+        Assert.assertEquals(steps.isMailPresentInSent().size(),1);
     }
-//    @Test
-//    public void deleteFirstMessageInInboxFolder() {
-//        steps.chooseFirstInboxMailAndDeleteIt();
-//        Assert.assertTrue(steps.isDeletedMailPresentInTrashFolder());
-//    }
-//
-//    @Test
-//    public void markFirstMessageInInboxFolderAsSpam() {
-//        steps.chooseFirstInboxMailAndMarkItAsSpam();
-//        Assert.assertTrue(steps.isMailPresentInSpamFolder());
-//    }
+    @Test
+    public void deleteFirstMessageInInboxFolder() {
+        steps.chooseFirstInboxMailAndDeleteIt();
+        Assert.assertEquals(steps.isDeletedMailPresentInTrashFolder().size(),1);
+    }
+
+    @Test
+    public void markFirstMessageInInboxFolderAsSpam() {
+        steps.chooseFirstInboxMailAndMarkItAsSpam();
+        Assert.assertEquals(steps.isMailPresentInSpamFolder().size(),1);
+    }
 
 }

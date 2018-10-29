@@ -2,18 +2,19 @@ package steps;
 
 import buisnessObjects.Mail;
 import buisnessObjects.User;
-import driverManageer.RemoteDriverCreator;
-import driverManageer.WebDriverDecorator;
+import driverManagers.RemoteDriverCreator;
+import driverManagers.WebDriverDecorator;
 import org.openqa.selenium.WebDriverException;
-import org.openqa.selenium.remote.RemoteWebDriver;
 import pageObjects.*;
-import driverManageer.ChromeDriverCreator;
+import driverManagers.ChromeDriverCreator;
 import org.openqa.selenium.WebDriver;
+
+import java.util.ArrayList;
 
 public class Steps {
     private static final int IMPLICIT_DELAY = 10;
     private static final String LAGUAGE_FILTER = "Java";
-    private WebDriver driver;
+    private static WebDriver driver;
     private String expectedGistName;
     private SpamPage spamPage;
     private InboxPage inboxPage;
@@ -39,17 +40,17 @@ public class Steps {
         return (leftBarClass.getAccountCurrentEmail()).getText();
     }
 
-    public boolean isMailPresentInDrafts() {
+    public ArrayList<Mail> isMailPresentInDrafts() {
         LeftBarClass leftBarClass = new LeftBarClass(driver);
-        return (leftBarClass.clickDraftsPage().findMailInDraft() != null);
+        return (leftBarClass.clickDraftsPage().findMailInDraft());
     }
 
     public void saveCreatedMailAndSendItFromDraft(Mail mail) {
         CreateNewMailPage createNewMailPage = new CreateNewMailPage(driver);
-        createNewMailPage.pressCreateMessageButton().fillNewMailMessageAndSaveToDraft(Mail.getMailAddressee(),Mail.getMailTopic(),Mail.getMailContent());
+        createNewMailPage.pressCreateMessageButton().fillNewMailMessageAndSaveToDraft(mail);
         createNewMailPage.moveToDraftsAndAcceptAlert();
         DraftsPage draftsPage = new DraftsPage(driver);
-        draftsPage.openPage().clickOnSavedMailInDrafts(draftsPage.findMailInDraft()).clickSendButton();
+        draftsPage.openPage().clickOnSavedMailInDrafts().clickSendButton();
     }
 
     public void chooseFirstInboxMailAndDeleteIt() {
@@ -58,10 +59,9 @@ public class Steps {
     }
 
     public void saveCreatedMailAndGoToDraftsPage() {
-        LeftBarClass leftBarClass = new LeftBarClass(driver);
-        CreateNewMailPage createNewMailPage = leftBarClass.pressCreateMessageButton();
-        createNewMailPage.fillNewMailMessageAndSaveToDraft(Mail.getMailAddressee(),Mail.getMailTopic(),Mail.getMailContent());
-        DraftsPage draftsPage = leftBarClass.clickDraftsPage();
+        CreateNewMailPage createNewMailPage = new CreateNewMailPage(driver);
+        createNewMailPage.pressCreateMessageButton().fillNewMailMessageAndSaveToDraft(new Mail());
+        createNewMailPage.moveToDraftsAndAcceptAlert();
         createNewMailPage.moveToDraftsAndAcceptAlert();
     }
 
@@ -71,9 +71,9 @@ public class Steps {
         loginPage.login(User.getMailLogin(),User.getMailPassword());
     }
 
-    public boolean isMailPresentInSent() {
+    public ArrayList<Mail> isMailPresentInSent() {
         LeftBarClass leftBarClass = new LeftBarClass(driver);
-        return  leftBarClass.clickSentPage().findMailInSent()!= null;
+        return  leftBarClass.clickSentPage().findMailInSent();
     }
 
     public void chooseFirstInboxMailAndMarkItAsSpam() {
@@ -84,17 +84,18 @@ public class Steps {
 
     }
 
-    public boolean isMailPresentInSpamFolder() {
+    public ArrayList<Mail> isMailPresentInSpamFolder() {
         SpamPage spamPage = new SpamPage(driver);
         spamPage.openPage();
-        return spamPage.findMailInSpam() != null;
+        return spamPage.findMailInSpam();
     }
 
-    public boolean isDeletedMailPresentInTrashFolder() {
+    public ArrayList<Mail> isDeletedMailPresentInTrashFolder() {
         trashPage = new TrashPage(driver);
         trashPage.openPage();
-        return trashPage.checkForDeletedMessage() >= 0;
+        return trashPage.checkForDeletedMessage();
     }
+
 //    public void logOut() {
 //        UserMailPage userMailPage = new UserMailPage(driver);
 //        userMailPage.pressLogoutButton();

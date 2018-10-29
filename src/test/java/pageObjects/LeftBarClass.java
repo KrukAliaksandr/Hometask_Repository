@@ -1,11 +1,16 @@
 package pageObjects;
 
-import org.openqa.selenium.StaleElementReferenceException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import additionalClasses.MailSaverClass;
+import buisnessObjects.Mail;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.List;
 
 public class LeftBarClass extends AbstractPage{
     private String BASE_URL = "https://e.mail.ru/messages";
@@ -81,6 +86,49 @@ public class LeftBarClass extends AbstractPage{
         deletedMessagesButton.click();
         return new TrashPage(driver);
     }
+
+    public ArrayList<Mail> searchThroughMails(String xPath) {
+        ArrayList<Mail> resultCollection = new ArrayList<Mail>();
+        try {
+            Collection<WebElement> collection = getVisibleElements(driver.findElements(By.xpath(xPath)), 10);
+            Iterator<WebElement> iterator = collection.iterator();
+            WebElement element = null;
+            while (iterator.hasNext()) {
+                element = iterator.next();
+                System.out.println(element.findElement(By.xpath("//div[@class = 'b-datalist__item__subj']")).getText());
+                System.out.println(element.findElement(By.xpath("//div[@class = 'b-datalist__item__addr']")).getText());
+                if (element.findElement(By.xpath(".//div[@class = 'b-datalist__item__subj']")).getText().equals(MailSaverClass.getMailSubjectAndBody()) &&
+                        element.findElement(By.xpath(".//div[@class = 'b-datalist__item__addr']")).getText().equals(MailSaverClass.getMailAddressee())) {
+                    resultCollection.add(new Mail(element.findElement(By.xpath(".//div[@class = 'b-datalist__item__addr']")).getText(), element.findElement(By.xpath(".//div[@class = 'b-datalist__item__subj']")).getText()));
+                }
+            }
+            return resultCollection;
+        } catch (TimeoutException te) {
+            return resultCollection;
+        }
+    }
+
+    public ArrayList<WebElement> searchForSavedMail (String xPath) {
+        ArrayList<WebElement> resultCollection = new ArrayList<WebElement>();
+        try {
+            Collection<WebElement> collection = getVisibleElements(driver.findElements(By.xpath(xPath)), 10);
+            Iterator<WebElement> iterator = collection.iterator();
+            WebElement element = null;
+            while (iterator.hasNext()) {
+                element = iterator.next();
+                System.out.println(element.findElement(By.xpath("//div[@class = 'b-datalist__item__subj']")).getText());
+                System.out.println(element.findElement(By.xpath("//div[@class = 'b-datalist__item__addr']")).getText());
+                if (element.findElement(By.xpath(".//div[@class = 'b-datalist__item__subj']")).getText().equals(MailSaverClass.getMailSubjectAndBody()) &&
+                        element.findElement(By.xpath(".//div[@class = 'b-datalist__item__addr']")).getText().equals(MailSaverClass.getMailAddressee())) {
+                    resultCollection.add(element);
+                }
+            }
+            return resultCollection;
+        } catch (TimeoutException te) {
+            return resultCollection;
+        }
+    }
+
 
     public WebElement getButtonCreateNewMessage() {
         return buttonCreateNewMessage;

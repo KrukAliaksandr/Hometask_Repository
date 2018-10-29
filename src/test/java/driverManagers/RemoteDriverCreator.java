@@ -1,4 +1,4 @@
-package driverManageer;
+package driverManagers;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -18,7 +18,7 @@ public class RemoteDriverCreator implements WebDriverCreator {
     public RemoteDriverCreator() {
     }
 
-    public WebDriver getWebDriver() {
+    public  WebDriver getWebDriver() {
         DesiredCapabilities capabilities = DesiredCapabilities.chrome();
         remoteDriver = null;
         try {

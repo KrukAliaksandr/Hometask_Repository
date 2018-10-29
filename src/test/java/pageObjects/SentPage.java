@@ -1,9 +1,11 @@
 package pageObjects;
 
 import additionalClasses.MailSaverClass;
+import buisnessObjects.Mail;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
 
@@ -16,25 +18,8 @@ public class SentPage extends LeftBarClass {
         PageFactory.initElements(this.driver, this);
     }
 
-    public WebElement findMailInSent() {
-
-        driver.navigate().refresh();
-        Collection<WebElement> collection = driver.findElements(By.xpath(".//div[@class='b-datalist__item__info']"));
-        System.out.println(collection.size());
-        Iterator<WebElement> iterator = collection.iterator();
-        WebElement element = null;
-        while (iterator.hasNext()) {
-            element = iterator.next();
-            if (element.findElement(By.xpath(".//div[@class = 'b-datalist__item__subj']")).getText().substring(1).equals(MailSaverClass.getMailSubjectAndBody()) &&
-                    element.findElement(By.xpath(".//div[@class = 'b-datalist__item__addr']")).getText().equals(MailSaverClass.getMailAddressee())) {
-
-                return element;
-            }
-
-        }
-        return null;
-
-
+    public ArrayList<Mail> findMailInSent() {
+            return searchThroughMails(".//div[@class='b-datalist__item__info']");
     }
 
     public SentPage openPage() {

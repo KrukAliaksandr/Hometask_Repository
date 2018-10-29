@@ -1,15 +1,16 @@
-package driverManageer;
+package driverManagers;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 
 import java.util.ResourceBundle;
 import java.util.concurrent.TimeUnit;
 
-public class ChromeDriverCreator implements WebDriverCreator {
+public class
+ChromeDriverCreator implements WebDriverCreator {
 
     private static final Logger logger = LogManager.getRootLogger();
     private ResourceBundle rb;

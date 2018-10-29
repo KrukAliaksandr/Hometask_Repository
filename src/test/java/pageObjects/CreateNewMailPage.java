@@ -1,6 +1,7 @@
 package pageObjects;
 
 import additionalClasses.MailSaverClass;
+import buisnessObjects.Mail;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
@@ -51,16 +52,22 @@ public class CreateNewMailPage extends LeftBarClass {
 
     }
 
-    public CreateNewMailPage fillNewMailMessageAndSaveToDraft(String mailAddressee,String mailTopic,String mailContent) {
-        addressee.sendKeys(mailAddressee);
-        topic.sendKeys(mailTopic);
+    public CreateNewMailPage fillNewMailMessageAndSaveToDraft(Mail mail) {
+        driver.navigate().refresh();
+        addressee.sendKeys(mail.getMailAddressee());
+        topic.sendKeys(mail.getMailTopicAndContent().substring(0,12));
         driver.switchTo().frame(iframeForTextField);
+        getVisibleElement(bodyForTextField);
         bodyForTextField.clear();
-        bodyForTextField.sendKeys(mailContent);
+        bodyForTextField.sendKeys(mail.getMailTopicAndContent().substring(12));
         driver.switchTo().defaultContent();
         waitForAjaxProcessed();
+        highlightElement(button_save_letter);
+        button_save_letter.click();
+        unHighlightElement(button_save_letter);
+        waitForAjaxProcessed();
         MailSaverClass.getMailBuffer();
-        MailSaverClass.saveMailInBuffer(mailTopic + mailContent,mailAddressee);
+        MailSaverClass.saveAsMailForComparsion(mail.getMailTopicAndContent(),mail.getMailAddressee());
         return this;
     }
 
